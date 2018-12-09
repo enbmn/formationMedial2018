@@ -1,0 +1,195 @@
+/* Remark theme - modified by greatghoul */
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url('https://fonts.googleapis.com/css?family=Palanquin+Dark:700');
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300|Spectral:800');
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Anton|Oswald:700|Six+Caps');
+body {
+    font-family: 'Gill Sans'
+}
+
+
+
+h1, h2, h5 {
+   font-family: 'Spectral';
+   margin-bottom: 0;
+   line-height: 1em;
+}
+
+
+h3, h4 {
+    font-family: 'Merriweather';
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 1.2em;
+}
+
+h1 {
+    font-size: 2.4em;
+}
+
+h2 {
+    font-size: 2.0em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.2em;
+    color: rgb(214, 128, 37);
+}
+
+h5 {
+    font-size: 4em;
+
+}
+
+
+.remark-code, .remark-inline-code {
+font-family: 'Gill Sans';
+}
+
+.remark-slide-content h1 { font-size: 3em; }
+.remark-slide-content h2 { font-size: 2em; }
+.remark-slide-content h3 { font-size: 1.6em; }
+.footnote {
+position: absolute;
+bottom: 3em;
+}
+ul, ol {
+    list-style-position: outside;
+}
+
+.footnote {
+
+    bottom: 0.4em;
+    font-size: 0.6em;
+    float: right;
+}
+
+.menu > ul > li {
+    font-size: 2.0em;
+}
+
+.menu > ul > li > ul > li {
+    font-size: 1.0em;
+}
+
+.red {
+    color: rgb(250, 165, 0);
+}
+
+.large {
+    font-size: 2em;
+}
+
+.small {
+    font-size: 0.8em;
+}
+
+.cite {
+    font-size: 1em;
+    color:rgb(250, 165, 0)
+}
+
+
+a, a > code {
+    color: rgb(249, 133, 39);
+    text-decoration: none;
+}
+
+
+}
+
+
+.pull-left {
+    float: left;
+    width: 47%;
+}
+
+.pull-right {
+    float: right;
+    width: 47%;
+}
+
+.pull-right ~ p {
+    clear: both;
+}
+
+#slideshow .slide .content code {
+    font-size: 0.8em;
+}
+
+#slideshow .slide .content pre code {
+    font-size: 0.9em;
+    padding: 8px;
+    background: #24251D;
+}
+
+.inverse {
+    background: #46463e;
+    color: #ededed;
+    /* text-shadow: 0 0 20px #333; */
+}
+
+.inverse h1, .inverse h2 {
+    color: #d7d5d5;
+}
+
+/* Slide-specific styling */
+#slide-how .slides {
+    font-size: 0.9em;
+    position: absolute;
+    top: 151px;
+    right: 140px;
+}
+
+#slide-how .slides h3 {
+    margin-top: 0.2em;
+}
+
+#slide-how .slides .first, #slide-how .slides .second {
+    padding: 1px 20px;
+    height: 90px;
+    width: 120px;
+    -moz-box-shadow: 0 0 10px #777;
+    -webkit-box-shadow: 0 0 10px #777;
+    box-shadow: 0 0 10px #777;
+}
+
+#slide-how .slides .first {
+    background: #fff;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 1;
+}
+
+#slide-how .slides .second {
+    position: relative;
+    background: #fff;
+    z-index: 0;
+}
+
+/* Two-column layout */
+.left-column {
+    color: #777;
+    width: 20%;
+    height: 92%;
+    float: left;
+}
+
+.left-column h2:last-of-type, .left-column h3:last-child {
+    color: #ccc;
+}
+
+.right-column {
+    width: 75%;
+    float: right;
+    padding-top: 15px;
+}

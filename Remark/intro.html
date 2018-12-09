@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Title</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <link href="themes/remark-dark.css" rel="stylesheet" media="all" type="text/css"/>
+    </head>
+    <body>
+      <textarea id="source">
+
+title: Mettre en ligne et valoriser le patrimoine écrit et graphique numérisé
+
+description: Acquérir les fondamentaux, notamment techniques, pour la mise en ligne et la valorisation de documents numérisés : description, gestion des fichiers... Les stagiaires travailleront sur la rédaction des métadonnées de documents numériques en Dublin Core, format employé pour assurer l'interopérabilité entre outils de valorisation en ligne. Ils s'initieront à l'import des fichiers numériques sur une plateforme Omeka, logiciel libre permettant la mise en ligne et la valorisation de ce type de documents.
+theme: ../themes/remark-dark.css
+name: inverse
+layout: true
+class: inverse
+---
+layout: inverse
+class: center
+# Mettre en ligne et valoriser le patrimoine écrit et graphique numérisé
+<!-- ![](img/ours.png) -->
+<br>
+### Medial, IUT Nancy-Charlemagne les 13 et 14 décembre 2018
+
+.small[Cindy Hopfner, chargée de valorisation du patrimoine numérisé et cheffe de projet éditorial pour Limédia (BNR du Sillon Lorrain),  Bibliothèques de Nancy]
+.small[Éric Nunes, responsable du service numérique du patrimoine et chef de projet technique pour Limédia (BNR du Sillon Lorrain),  Bibliothèques de Nancy]
+
+<br>
+
+[.footnote[Sources et références, Github Éric Nunes]](https://github.com/enbmn)
+---
+layout: inverse
+class: left
+
+# Jeudi 13 décembre
+## .red[Programme]
+#### 1. Le document numérique
+#### 2. Nommage des fichiers
+#### 3. Définir les métadonnées de description d'un document numérique
+#### 4. Présentation du Dublin Core
+#### 5. Brève présentation d'Omeka
+<br>
+9h30-12h30 & 13h30-16h30
+---
+
+layout: inverse
+class: left
+<br>
+<br>
+# Le document numérique
+#### On parlera plutôt d'objet numérique :
+
+Ce terme d'objet numérique désigne toute manifestation numérique, native ou non.
+- Une vidéo, une image numérique, sont des objets numériques se substituant en le reproduisant à un objet analogique  ;
+- un pdf, un fichier word, un site web, sont des objets numériques natifs et parfois composés d'autres objets numériques.
+
+
+.cite[Dans Omeka l'objet numérique s'appelle un `item`, un `contenu`]
+
+L'image numérique qui nous occupe ici est donc un objet numérique, composé de données qu'il est nécessaire de stocker, conserver (ne pas confondre stockage et conservation), d'où
+sa parenté avec l'objet physique (il ne se substitue jamais à lui, mais le redouble) ces données doivent être lues par une interface (logiciel, OS) qui a elle-même besoin d'un terminal (ordinateur, smartphone, etc.) pour diffuser le document.
+
+???
+stockage : chacun est à même de stocker des documents numériques, dans le cloud, sur disque durn clef USB, etc...
+
+conservation : la conservation est basée sur un workflow spécifique et propre au type de
+document numérique. Il suppose une gestion fine du cycle de vie du document, ce qui suppose des métadonnées particulières et une ingénierie spécifique.
+
+---
+
+layout: inverse
+class: left
+# Nommage des fichiers
+
+Les conventions de nommage de fichiers en informatique sont simples :
+- pas d'espaces ;
+- pas de caractères accentués ;
+- pas de caractères spéciaux (#, @; !, etc.) ;
+- éviter de dépasser 30 caractères extension comprise.
+
+Règles d'usages :
+- remplacer espaces et "mots vides" (le, la, de)" par underscore ( .cite[_] , tiret du 8 sur pc) ;
+- dates au format 20181213 (norme ISO 8601) ;
+- utiliser la syntaxe camelCase ;
+ - minuscule au premier mot, les autres sont accolés et comporte une majuscule
+
+ex : imageNumeriqueNancy.jpg
+---
+
+layout: inverse
+class: left
+
+ ## Conventions pour la numérisation
+
+- le préfixe sera toujours l'identification de l'établissement (rbccn, etc.) ;
+- suivra la cote ;
+- un numéro de séquence sur 4 chiffres ou plus.
+> ex : B543956101M00050_0001.jpg > Ms 50 des Bbliothèques de Nancy, vue 1, la correspondance vue/page peut être établie dansla bibliothèque numérique.
+
+.cite[ou]
+- id de l'établissement ;
+- code arbitraire ;
+- séquence.
+
+Le premier format est sémantique : calqué sur la cote du document, on peut donc retrouver facilement un document, un usager sait immédiatement ce qu'il a téléchargé (dans une certaine limite). Il nécessite tout de même l'établissement d'un **plan de nommage** prenant en compte tous les types de documents (livres, iconographie, journaux, etc.). Dans le deuxième cas, le travail est plus lourd, établisement d'une table de correspondance, indexation des images obligatoire et utilisation d'une GED fortement recommandée. On pourra ajouter des codes pour les types de documents (basse définition, conservation etc.)
+
+.cite[Voir :] [Codes des établissements producteurs en France](http://www.culture.gouv.fr/Thematiques/Innovation-numerique/Numerisation/Recommandations-techniques/Identifiants-des-images-numerisees-codes-pour-les-producteurs/Carte-des-codes-INSEE-regions-et-departements)
+
+---
+template: inverse
+class: left
+<br>
+<br>
+# Les métadonnées
+
+Pour décrire un objet numérique on utilise des métadonnées.
+.cite[déf. : (du grec meta : au delà de)
+- c'est une donnée sur un objet numérique (qui peut-être lui-même un ensemble de données)  qui peut correspondre à un ou des documents physiques (représentation numérique d'un objet physique) ou être nativement numérique (fichier word) ...
+- "Donnée qui définit et décrit une autre donnée" (ISO/IEC 11179-3, 2003) ]
+<br>
+<br>
+Pensées à l'origine pour les machines (métadonnées techniques), certaines peuvent aussi être lisibles par l'humain, et être utilisées pour
+enrichir le document lors de sa diffusion (métadonnées sémantiques).
+
+???
+Exemple Flickr
+
+---
+
+template: inverse
+class: left
+<br>
+<br>
+## Les types de métadonnées
+
+<br>
+Il existe autant de types de métadonnées que de besoins, dans nos métiers citons les principaux :
+- .cite[[IPTC](https://iptc.org/standards/photo-metadata/iptc-standard), [XMP](https://fr.wikipedia.org/wiki/Extensible_Metadata_Platform)], pour les données des images numériques ;
+- .cite[[Exif](https://fr.wikipedia.org/wiki/Exchangeable_image_file_format)], pour les données techniques des images ;
+- .cite[[Premis](https://www.loc.gov/standards/premis/)], pour la conservation numérique, exprimées en XML, on les embarque dans les fichiers [METS](http://www.loc.gov/standards/mets/).
+
+
+Mais sont aussi des métadonnées certains schémas de données :
+- .cite[[Dublin Core](http://dublincore.org/)], elles sont le socle des descriptions dans Omeka ;
+- .cite[[EAD](https://www.loc.gov/ead/)], pour structurer les données de description archivistique ;
+- .cite[[TEI](https://www.tei-c.org)], pour les données descriptives des textes, afin de les transcrire ;
+- .cite[[MarcXML](http://www.loc.gov/standards/marcxml/marcxml-overview.html)], pour les données  bibliographiques (exprimées en XML) ;
+- .cite[[Alto](https://www.loc.gov/standards/alto/)], pour structurer et rendre les données OCR textuelles et graphiques des images.
+
+
+???
+Schéma : un schéma est
+- IPTC : "La norme de métadonnées de photo IPTC est la norme la plus largement utilisée en raison de son acceptation universelle par les photographes, les distributeurs,
+les agences de presse, les archivistes et les développeurs. Il est embarqué, contrairement à Extensible Metadata Platform ou XMP qui est un format de métadonnées basé sur XML, pas formcément embarqué, et extensible.
+Le schéma définit la structure, les propriétés et les champs des métadonnées, afin que les images soient décrites de manière optimale et facilement accessibles ultérieurement."
+- EXIF EXangeable Information File Format : elles sont générées à la création du fichier et n'ont pas vocation à être modifiées, elle constitue la description technique de plus bas niveau du document.
+- PREMIS : "Le dictionnaire de données
+PREMIS pour la préservation des métadonnées est la norme internationale pour les métadonnées permettant la préservation des objets numériques et leur utilisation à long terme. "
+- METS :
+"Le schéma METS est un standard pour l'encodage de métadonnées descriptives, administratives et structurelles concernant des objets dans une bibliothèque numérique, exprimé en XML"
+- EAD : "Encoded Archival Description (EAD) est une norme XML de codage des outils de recherche pour les archives"
+- TEI : "La TEI (Text Encoding Initiative) est un consortium qui élabore et gère collectivement un standard pour la représentation de textes sous forme numérique"
+- MarcXml : cadre pour travailler avec les données MARC dans un environnement XML
+- Alto : "ALTO (Layout and text object) stocke les informations de mise en page et le texte reconnu par l' OCR des pages de tout type de documents imprimés, tels que des livres, des revues et des journaux"
+
+
+---
+
+template: inverse
+class: left
+<br>
+<br>
+<br>
+<br>
+On peut les regrouper en 3 groupes, qui se combinent :
+
+- .cite[Descriptives], elles concernent le contenu du document ;
+- .cite[Techniques et structurelles], elles décrivent les caractéristiques techniques du document, sa structure, les prérequis à sa diffusion (format, etc.) ;
+- .cite[Administratives], elles concernent le fournisseur, créateur du document, son cycle de vie.
+
+#### Nous allons nous intéresser au Dublin Core
+![](img/dc.png)
+---
+
+template: inverse
+class: left
+
+# Le Dublin Core
+<br><br>
+Ce schéma est un ensemble de métadonnées créé en 1995 par l'OCLC à Dublin aux USA. Il permet de décrire n'importe quel type de document mis en ligne.
+Il avait pour objet d'aider à l'indexation du web,
+mais les moteurs ne s'en sont pas emparés, préférant développer leurs propres algorythmes (pour des raisons commerciales).
+Il est normalisé depuis 2003 (ISO 15836) et est aujourd'hui en version 1.1.
+<br><br>
+.cite[L'objectif du Dublin Core est de fournir un socle commun d'éléments descriptifs pour améliorer le signalement et la recherche de ressources
+au-delà des diverses communautés et des nombreux formats descriptifs propres à chaque spécialité, tout en restant suffisamment structuré.
+
+Le Dublin Core prévoit 15 éléments tous facultatifs et tous répétables, qui portent sur la description :
+
+- .cite[du contenu] : Title, Subject, Description, Source, Language, Relation, Coverage ;
+- .cite[de la propriété intellectuelle] : Creator, Contributor, Publisher, Rights ;
+- .cite[de l'instanciation] : Date, Type, Format, Identifier.]
+
+[Source : BnF](http://www.bnf.fr/fr/professionnels/formats_catalogage/a.f_dublin_core.html)
+
+[.footnote[Le site de Dublin Core]](http://dublincore.org/)
+
+
+---
+template: inverse
+class: left
+
+<br>
+<br>
+Le DCMI ne donne pas d'indications d'usage pour ces 15 éléments. Chacun est libre de les utiliser en fonction de ses besoins.
+
+
+Le fait de proposer des labels (étiquettes) en langage naturel rend le modèle compréhensible par l'humain, les termes sont assez génériques pour garantir une interopérabilité informelle satisfaisante.
+### .cite[Mais]
+-  un cadre commun permet d'assurer une interopérabilité maximale ;
+  - la BnF propose un guide pour l'utilisation du Dublin Core, on doit s'en inspirer ;
+    - garanti d'être plus facilement moissonné par Gallica et d'assurer un socle commun très large.
+
+#### .cite[En effet]
+Le Dublin Core est l'un des schémas minimum requis pour rendre les données interopérables, c'est à dire accessibles, à d'autres bibliothèques numériques au travers du protocole **OAI-PMH**
+
+???
+Le protocole OAI-PMH (Open Archives Initiative - Protocol for Metadata Harvesting) est à la base de l’interopérabilité entre bibliothèques numériques (un peu comme peut l’être le Z39.50). Il est issu des travaux de la Convention de Santa Fé en 1999, aujourd’hui OAI-PMH est en V2 (2002). Il est basé sur le protocole HTTP (client/serveur avec les méthodes GET et POST) et XML (pour l’encodage des réponses).
+
+Il permet d’échanger, de manière asynchrone, des données dans le but de multiplier les accès aux documents numériques en les « exposants » sur plusieurs plateformes, d’alimenter des agrégateurs de contenus thématiques ou de reconstituer des corpus virtuellement.
+---
+template: inverse
+class: left
+# Omeka
+
+Omeka est un logiciel libre (licence GPL) et gratuit conçu par le _Roy Rosenzweig Center for History and New Media_ pour des usages en SHS (ils ont aussi conçu Zotero et Tropy).
+
+Cette particularité d’avoir été pensé par et pour des projets scientifiques le rend très populaire. Il est surtout utilisé dans les universités, et quelques bibliothèques publiques.
+
+### .cite[Une bibliothèque numérique en mode CMS]
+- Facile à installer ;
+- orienté sciences humaines ;
+- extensible grâce à des plugins ;
+  - personnalisable et hackable
+- simple a prendre en main ;
+- orienté valorisation
+
+
+
+???
+Omeka est pensé comme un CMS (content management system). Ce gestionnaire de contenuest bâti autour d’un cœur, le moteur, et d’une base de donnée lamp. On peut très facilement lui ajouter des plugins pour augmenter ses possibilités et l’adapter à ses besoins. On peut aussi très facilement avoir recours à des développeurs pour créer des plugins sur mesure (Kiosque).
+
+interopérabilité et partage des données à
+l'aide de différentes méthodes : RSS, OAI-PMH, RDF
+---
+template: inverse
+class: left
+##Survol des fonctionnalités de base
+#### -  Tableau de bord (Dashboard)
+#### - Contenus (Items)
+####- Collections
+####- Types de contenus (items types)
+####- Tags
+###et des plugins
+####- Expositions (Exhibits)
+####-  Simples pages
+
+...
+<br/>
+---
+template: inverse
+class: left
+## Back office
+<br>
+####- Réglage des paramètres
+####- Gestion des utilisateurs et des droits
+####- Configuration du thème et des plugins
+####- Gestion des contenus
+####- Import de lots de données
+
+---
+template: inverse
+class: left
+## Front office
+
+####- Liste des Items (browse items)
+Donne accès à toute la base.
+####- Collections (browse collections)
+Donne accès à la liste des collection, chacune d'elles regroupant des items (un item ne peut être que dans une seule collection, limitation génante)
+####- Tags (éventuellement)
+####- Exhibits (browse exhibits)
+####- Simple pages (à propos, contact etc...)
+####- Moteur de recherche
+Donne accès au moteur de recherche avancé
+
+
+[.footnote[Jour 2]](jour2.html)
+
+
+
+    </textarea>
+    <script src="js/remark-0.6.5.min.js" type="text/javascript"></script>
+    <script type="text/javascript">var hljs = remark.highlighter.engine;</script>
+    <script src="remark.language.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    var slideshow = remark.create({
+    highlightStyle: 'monokai',
+    highlightLanguage: 'remark'
+    }) ;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Title</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <link href="themes/remark-dark.css" rel="stylesheet" media="all" type="text/css"/>
+    </head>
+    <body>
+      <textarea id="source">
+
+title: Mettre en ligne et valoriser le patrimoine écrit et graphique numérisé
+
+description: Acquérir les fondamentaux, notamment techniques, pour la mise en ligne et la valorisation de documents numérisés : description, gestion des fichiers... Les stagiaires travailleront sur la rédaction des métadonnées de documents numériques en Dublin Core, format employé pour assurer l'interopérabilité entre outils de valorisation en ligne. Ils s'initieront à l'import des fichiers numériques sur une plateforme Omeka, logiciel libre permettant la mise en ligne et la valorisation de ce type de documents.
+theme: ../themes/remark-dark.css
+name: inverse
+layout: true
+class: inverse
+---
+layout: inverse
+class: center
+# Mettre en ligne et valoriser le patrimoine écrit et graphique numérisé
+<!-- ![](img/ours.png) -->
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+[Retour au jour 1](intro.html)
+[.footnote[Sources et références, Github Éric Nunes]](https://github.com/enbmn)
+
+---
+layout: inverse
+class: left
+<br>
+## .red[Programme]
+<br>
+#### 1. Décrire en Dublin Core
+#### 2. Importer des données
+#### 3. Visualiser / valoriser
+#### 4. Construire une exposition avec Exhibits
+---
+
+layout: inverse
+class: left
+
+# Décrire en Dublin Core
+---
+
+layout: inverse
+class: left
+#  Importer des données
+
+####Importation manuelle
+Dans Omeka :
+- Add an Items ;
+   - renseigner les métadonnées Dublin Core ;
+   - indiquer le type de métadonnées complémentaire (éventuel) ;
+   - ajouter le ou les fichiers constituant l'item ;
+   - ajouter des tags (éventuellement) ;
+   - choisir éventuellement une collection de rattachement (un item ne peut appartenir qu'à une collection, sauf à utiliser le plugin Collection Tree)
+   - choisir le statut du document : public et/ou mis en avant (en fonction du thème choisi, sera présent en page d'accueil par exemple)
+
+#### Importation en masse
+L'import en masse passera quasiment  toujours par un fichier de métadonnées en csv et l'upload préalable sur le serveur via un FTP. Dans Omeka on peut utiliser des plugins :
+- CsvImport
+- Dropbox
+
+---
+layout: inverse
+class: left
+
+![](img/addItemDC.png)
+<br>
+<br>
+![](img/addItemMeta.png)
+
+
+---
+layout: inverse
+class: left
+
+
+![](img/addItemFile.png)
+<br>
+<br>
+![](img/addItemTag.png)
+
+
+
+---
+layout: inverse
+class: left
+#  Visualiser / valoriser
+>.cite[Une bibliothèque numérique est une base de donnée dotée d'une interface permettant de voir un contenu  (qui peut être une image ou un texte) et sa description (sa notice).]
+
+Mais c'est la conception minimaliste.
+Il convient de dépasser ce stade et de se poser un certain nombre de question.
+
+Que veut-on donner à voir :
+- Quel mode d'entrée dans le document numérique
+  - par la notice ;
+  - par l'image
+
+
+Le mode d'accès aux données est une forme de valorisation (bien entendu dépendante du corpus et du projet)
+- .cite[scientifique], par le moteur ;
+- .cite[grand public], l'accès se fait par l'image directement ;
+- .cite[public motivé], on propose un accès guidé, .cite[éditorial] pour entrer dans la bibliothèque numérique ;
+-  pour certains type de données l'accès sera .cite[cartographique] ;
+- on peut aussi envisager une accès .cite[graphique], sous forme de dataviz (peut servir à donner à voir une typologie, une "masse") ...
+
+???
+Illustrer cette partie par des exemples
+- moteur : le choix des métadonnées doit orienter la façon dont on trouvera les document, on sait qui on vise
+- visuel : on privilégie l'accès par l'image, les métadonnées
+- éditorial ;
+- cartographique ;
+- graphique ...
+
+---
+template: inverse
+class: left
+# Construire une exposition avec Exhibits
+### Créer une exposition
+![](img/browseExi.png)
+
+Une exposition est une visite commentée de vos contenus, avec texte descriptif et mises en pages personnalisées.
+<br>
+- Pour en créer une, cliquez sur l'onglet "Expositions" (exhibits) ;
+- puis sur "Ajouter une exposition" (add an exhibit) ;
+---
+template: inverse
+class: center
+
+
+![](img/addExi.png)
+---
+<br>
+<br>
+<br>
+<br>
+- remplissez le formulaire dans la moitié supérieure de la page ;
+
+- un `slug` est un nom lisible par machine pour votre exposition et fera partie de votre URL, il est important qu'il soit compréhensible pour l'humain également ;
+
+- ajoutez des crédits (qui à fait cette exposition)
+
+- ajouter des tags, séparés par des virgules ;
+
+- sélectionner un thème (par défaut le même que le site ou personnalisé) ;
+
+- cochez si vous voulez une page de sommaire avec crédits et description visibles ;
+
+- choisissez une image d'illustration dans la base de données ;
+
+Créons le contenu de l'exposition en ajoutant des pages, des "chapitres" à l'exposition :
+- cliquez sur le bouton vert "Ajouter une page".
+
+
+---
+template: inverse
+class: left
+### Ajouter une page
+Une exposition peut comporter plusieurs pages. Vous pouvez les faire glisser pour les réorganiser, en créant même des sous-sections de pages sur d'autres.
+
+
+![](img/addPage.png)
+
+
+---
+template: inverse
+class: left
+
+- Ajouter un titre à votre page ;
+- puis un Slug (nom de la page dans la barre d'adresse URL) ;
+
+- "Nouveau bloc"
+  - Les pages sont constituées de blocs, qui peuvent être des fichiers et des textes, uniquement des fichiers ou du texte ;
+
+- Cliquez sur l'option Fichier avec texte puis sur le + vert "Ajouter un nouveau bloc de contenu"
+
+- Dans le bloc 1 (Fichier avec texte)
+  - cliquez sur le bouton  "Ajouter"  un élément ;
+
+- Dans la fenêtre qui s'ouvre :
+  - cliquez sur votre item puis sur "Sélectionner un item "
+
+  Vous pouvez ajouter une légende si vous le souhaitez.
+
+- Cliquez sur le bouton vert "Apply"
+---
+template: inverse
+class: center
+
+<br>
+<br>
+<br>
+<br>
+
+
+# Vous avez construit votre première exposition virtuelle avec Omeka
+
+---
+template: inverse
+class: left
+# Sources
+<br>
+- [Guide d’utilisation du Dublin Core, traduit en français](http://www.yoyodesign.org/doc/dcmi/usageguide/index.html)
+- [Guide d’utilisation du Dublin Core à la BnF, bonnes pratiques](http://www.bnf.fr/fr/professionnels/formats_catalogage/a.f_dublin_core.html)
+- [Mode d'emploi de `Exhibit builder` par Limonade and Co](http://www.limonadeandco.fr/presentation-du-plugin-exhibitbuilder-omeka/)
+- [Règles de nommage du ministère de la Culture](http://www.culture.gouv.fr/Thematiques/Innovation-numerique/Numerisation/Recommandations-techniques/Identifiants-d-images-numerisees)
+- [Codes des établissements producteurs en France](http://www.culture.gouv.fr/Thematiques/Innovation-numerique/Numerisation/Recommandations-techniques/Identifiants-des-images-numerisees-codes-pour-les-producteurs/Carte-des-codes-INSEE-regions-et-departements)
+
+---
+template: inverse
+class: left
+
+# Exemples de sites réalisés avec Omeka
+<br>
+## Omeka 2
+- [Bibliothèque numérique de l'observatoire de Paris](https://bibnum.obspm.fr/) ;
+- [Le Kiosque Lorrain](http://www.kiosque-lorrain.fr/) ;
+- [Bibliothèque renaissance à Nancy](http://bmn-renaissance.nancy.fr/) ;
+- [Bibliothèque numérique de l'Université de Perpignan](https://estudi.univ-perp.fr/)
+
+## Omeka S
+.cite[S] pour sémantique, cette version est aussi multi-site.
+- [PSL (Paris Sciences et Lettres) ](https://bibnum.explore.univ-psl.fr/s/psl/page/accueil)
+
+[Retour au jour 1](intro.html)
+
+
+
+
+    </textarea>
+    <script src="js/remark-0.6.5.min.js" type="text/javascript"></script>
+    <script type="text/javascript">var hljs = remark.highlighter.engine;</script>
+    <script src="remark.language.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    var slideshow = remark.create({
+    highlightStyle: 'monokai',
+    highlightLanguage: 'remark'
+    }) ;
+    </script>
+  </body>
+</html>
