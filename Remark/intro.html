@@ -96,16 +96,26 @@ class: left
 - le préfixe sera toujours l'identification de l'établissement (RCR, etc.) ;
 - suivra la cote ;
 - un numéro de séquence sur 4 chiffres ou plus.
-> ex : B543956101M00050_0001.jpg > Ms 50 des Bbliothèques de Nancy, vue 1, la correspondance vue/page peut être établie dansla bibliothèque numérique.
+> ex : B543956101M00050_0001.jpg > Ms 50 des Bibliothèques de Nancy, vue 1, la correspondance vue/page peut être établie dans la bibliothèque numérique.
 
 .cite[ou]
 - id de l'établissement ;
 - code arbitraire ;
 - séquence.
 
-Le premier format est sémantique : calqué sur la cote du document, on peut donc retrouver facilement un document, un usager sait immédiatement ce qu'il a téléchargé (dans une certaine limite). Il nécessite tout de même l'établissement d'un **plan de nommage** prenant en compte tous les types de documents (livres, iconographie, journaux, etc.). Dans le deuxième cas, le travail est plus lourd, établisement d'une table de correspondance, indexation des images obligatoire et utilisation d'une GED fortement recommandée. On pourra ajouter des codes pour les types de documents (basse définition, conservation etc.)
+Le premier format est sémantique : calqué sur la cote du document, lisible et compréhensible. Il nécessite tout de même l'établissement d'un **plan de nommage** prenant en compte tous les types de documents (livres, iconographie, journaux, etc.). Dans le deuxième cas, le travail est plus lourd, établisement d'une table de correspondance, indexation des images obligatoire et utilisation d'une GED fortement recommandée. On pourra ajouter des codes pour les types de documents (basse définition, conservation etc.)
 
-.cite[Voir :] [Codes des établissements producteurs en France](http://www.culture.gouv.fr/Thematiques/Innovation-numerique/Numerisation/Recommandations-techniques/Identifiants-des-images-numerisees-codes-pour-les-producteurs/Carte-des-codes-INSEE-regions-et-departements)
+.cite[Voir :]
+- [Codes des établissements producteurs en France](http://www.culture.gouv.fr/Thematiques/Innovation-numerique/Numerisation/Recommandations-techniques/Identifiants-des-images-numerisees-codes-pour-les-producteurs/Carte-des-codes-INSEE-regions-et-departements)
+- [Trouver un identifiant via le Catalogue collectif de France](https://ccfr.bnf.fr/portailccfr/jsp/public/index.jsp?failure=%2Fjsp%2Fpublic%2Ffailure.jsp&success=%2Fjsp%2Fpublic%2Findex.jsp&profile=public)
+
+
+???
+
+Exemple des nommages de Gallica vs de Nancy.
+
+Faire les exercices de renommage (avec vos codes d'établissements) basé sur des fichiers mal nommées
+
 
 ---
 template: inverse
@@ -124,8 +134,9 @@ Pensées à l'origine pour les machines (métadonnées techniques), certaines pe
 enrichir le document lors de sa diffusion (métadonnées sémantiques).
 
 ???
-Exemple Flickr
 
+Démonstration Exiftool sur différents fichiers, utiliser IrfanView pour écrire des métadonnées
+Exemple Flickr, upload d'un fichier
 ---
 
 template: inverse
@@ -138,10 +149,8 @@ class: left
 Il existe autant de types de métadonnées que de besoins, dans nos métiers citons les principaux :
 - .cite[[IPTC](https://iptc.org/standards/photo-metadata/iptc-standard), [XMP](https://fr.wikipedia.org/wiki/Extensible_Metadata_Platform)], pour les données des images numériques ;
 - .cite[[Exif](https://fr.wikipedia.org/wiki/Exchangeable_image_file_format)], pour les données techniques des images ;
-- .cite[[Premis](https://www.loc.gov/standards/premis/)], pour la conservation numérique, exprimées en XML, on les embarque dans les fichiers [METS](http://www.loc.gov/standards/mets/).
+- .cite[[Premis](https://www.loc.gov/standards/premis/)], pour la conservation numérique, exprimées en XML, on les embarque dans les fichiers [METS](http://www.loc.gov/standards/mets/) ;
 
-
-Mais sont aussi des métadonnées certains standards de données :
 - .cite[[Dublin Core](http://dublincore.org/)], elles sont le socle des descriptions dans Omeka ;
 - .cite[[EAD](https://www.loc.gov/ead/)], pour structurer les données de description archivistique ;
 - .cite[[TEI](https://www.tei-c.org)], pour les données descriptives des textes, afin de les transcrire ;
@@ -173,7 +182,7 @@ class: left
 <br>
 <br>
 <br>
-On peut les regrouper en 3 groupes, qui se combinent :
+On peut les regrouper en 3 types, qui se combinent :
 
 - .cite[Descriptives], elles concernent le contenu du document ;
 - .cite[Techniques et structurelles], elles décrivent les caractéristiques techniques du document, sa structure, les prérequis à sa diffusion (format, etc.) ;
@@ -181,6 +190,10 @@ On peut les regrouper en 3 groupes, qui se combinent :
 
 #### Nous allons nous intéresser au Dublin Core
 ![](img/dc.png)
+
+???
+Exif concerne essentiellement les données techniques, mais peut embarquer des données de géolocalisation, qui viennent cette fois documenter l'objet représenté. > Utilisé par Flickr.
+
 ---
 
 template: inverse
@@ -213,8 +226,7 @@ class: left
 
 <br>
 <br>
-Le DCMI ne donne pas d'indications d'usage pour ces 15 éléments. Chacun est libre de les utiliser en fonction de ses besoins.
-Il peut être raffiné à l'aide de "qualificateurs", les DCMETerms
+Le DCMI ne donne pas d'indications d'usage pour ces 15 éléments. Chacun est libre de les utiliser en fonction de ses besoins. Le [Dublin Core qualifié](http://www.dublincore.org/documents/dcmi-terms/#section-1) permet de raffiner les 15 termes de base avec 41 éléments s'y rapportant.
 
 Le fait de proposer des labels (étiquettes) en langage naturel rend le modèle compréhensible par l'humain, les termes sont assez génériques pour garantir une interopérabilité informelle satisfaisante.
 ### .cite[Mais]
@@ -223,9 +235,13 @@ Le fait de proposer des labels (étiquettes) en langage naturel rend le modèle 
     - garanti d'être plus facilement moissonné par Gallica et d'assurer un socle commun très large.
 
 #### .cite[En effet]
-Le Dublin Core est l'un des schémas minimum requis pour rendre les données interopérables, c'est à dire accessibles, à d'autres bibliothèques numériques au travers du protocole **OAI-PMH**
+Le Dublin Core est l'un des schémas minimum requis pour rendre les données interopérables, c'est à dire accessibles, à d'autres bibliothèques numériques au travers du protocole **OAI-PMH**.
 
 ???
+DC Qualifié ex :
+- Title > alternative
+- Relation > hasPart, isPartOf, etc.
+
 Le protocole OAI-PMH (Open Archives Initiative - Protocol for Metadata Harvesting) est à la base de l’interopérabilité entre bibliothèques numériques (un peu comme peut l’être le Z39.50). Il est issu des travaux de la Convention de Santa Fé en 1999, aujourd’hui OAI-PMH est en V2 (2002). Il est basé sur le protocole HTTP (client/serveur avec les méthodes GET et POST) et XML (pour l’encodage des réponses).
 
 Il permet d’échanger, de manière asynchrone, des données dans le but de multiplier les accès aux documents numériques en les « exposants » sur plusieurs plateformes, d’alimenter des agrégateurs de contenus thématiques ou de reconstituer des corpus virtuellement.
@@ -249,25 +265,34 @@ Cette particularité d’avoir été pensé par et pour des projets scientifique
 
 
 ???
-Omeka est pensé comme un CMS (content management system). Ce gestionnaire de contenuest bâti autour d’un cœur, le moteur, et d’une base de donnée lamp. On peut très facilement lui ajouter des plugins pour augmenter ses possibilités et l’adapter à ses besoins. On peut aussi très facilement avoir recours à des développeurs pour créer des plugins sur mesure (Kiosque).
+Omeka est pensé comme un CMS (content management system).
+
+Ce gestionnaire de contenu est bâti autour d’un cœur, le moteur, et d’une base de donnée lamp. On peut très facilement lui ajouter des plugins pour augmenter ses possibilités et l’adapter à ses besoins. On peut aussi très facilement avoir recours à des développeurs pour créer des plugins sur mesure (Kiosque).
 
 interopérabilité et partage des données à
 l'aide de différentes méthodes : RSS, OAI-PMH, RDF
 ---
 template: inverse
-class: left
-##Survol des fonctionnalités de base
+class: two-columns
+
+##Survol des fonctionnalités
+.left-column[
+###Base
 #### - Tableau de bord (Dashboard)
 #### - Contenus (Items)
 ####- Collections
 ####- Types de contenus (items types)
-####- Tags
-###et des plugins
+####- Tags]
+.right-column[
+###[Plugins](https://omeka.org/classic/plugins/)
 ####- Expositions (Exhibits)
 ####-  Simples pages
+####- Geolocation
+####- Frise chronologique ([Neatline](https://omeka.org/classic/plugins/NeatlineTime/))
+]
+???
 
-...
-<br/>
+Une définition précise de votre projet va déterminer le choix des plugins à mettre en œuvre. À qui je vaux m'adresser, quels sont les métadonnées dont je dispose / que je veux exploiter, ais-je les moyens techniques de déployer et maintenir un Omeka avec des plugins dont il faudra veuiller à la mise à jour.
 ---
 template: inverse
 class: left
