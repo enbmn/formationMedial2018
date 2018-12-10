@@ -28,7 +28,7 @@ class: center middle
 
 <br>
 
-[.footnote[Sources et références, Github Éric Nunes]](https://github.com/enbmn)
+[Sources et références : Github Éric Nunes](https://github.com/enbmn)
 ---
 layout: inverse
 class: center middle
@@ -42,6 +42,8 @@ class: center middle
 #### 5. Brève présentation d'Omeka
 <br>
 9h30-12h30 & 13h30-16h30
+
+[Aller au jour 2](jour2.html)
 ---
 
 layout: inverse
@@ -62,9 +64,9 @@ L'image numérique qui nous occupe ici est donc un objet numérique, composé de
 sa parenté avec l'objet physique (il ne se substitue jamais à lui, mais le redouble) ces données doivent être lues par une interface (logiciel, OS) qui a elle-même besoin d'un terminal (ordinateur, smartphone, etc.) pour diffuser le document.
 
 ???
-stockage : chacun est à même de stocker des documents numériques, dans le cloud, sur disque durn clef USB, etc...
+>stockage : chacun est à même de stocker des documents numériques, dans le cloud, sur disque durn clef USB, etc...
 
-conservation : la conservation est basée sur un workflow spécifique et propre au type de
+>conservation : la conservation est basée sur un workflow spécifique et propre au type de
 document numérique. Il suppose une gestion fine du cycle de vie du document, ce qui suppose des métadonnées particulières et une ingénierie spécifique.
 
 ---
@@ -112,10 +114,16 @@ Le premier format est sémantique : calqué sur la cote du document, lisible et 
 
 ???
 
-Exemple des nommages de Gallica vs de Nancy.
+>Exemple des nommages de Gallica vs de Nancy.
 
-Faire les exercices de renommage (avec vos codes d'établissements) basé sur des fichiers mal nommées
+>Faire les exercices de renommage (avec vos codes d'établissements) basé sur des fichiers mal nommés
+---
+layout: inverse
+class: middle center
 
+#Exercices de nommages
+
+Récupérer sur votre bureau les dossiers `aRenommer` et `aRenommer2` et rétablir un nommage conforme, avec si possible vos codes d'établissement.
 
 ---
 template: inverse
@@ -133,10 +141,11 @@ Pour décrire un objet numérique on utilise des métadonnées.
 Pensées à l'origine pour les machines (métadonnées techniques), certaines peuvent aussi être lisibles par l'humain, et être utilisées pour
 enrichir le document lors de sa diffusion (métadonnées sémantiques).
 
-???
 
-Démonstration Exiftool sur différents fichiers, utiliser IrfanView pour écrire des métadonnées
-Exemple Flickr, upload d'un fichier
+
+> Démonstration de [Exiftool](https://www.sno.phy.queensu.ca/~phil/exiftool/) sur différents fichiers, utiliser IrfanView pour écrire des métadonnées
+
+> Exemple Flickr, upload d'un fichier
 ---
 
 template: inverse
@@ -159,19 +168,19 @@ Il existe autant de types de métadonnées que de besoins, dans nos métiers cit
 
 
 ???
-Schéma : un schéma est
-- IPTC : "La norme de métadonnées de photo IPTC est la norme la plus largement utilisée en raison de son acceptation universelle par les photographes, les distributeurs,
+>Schéma : un schéma est
+>- IPTC : "La norme de métadonnées de photo IPTC est la norme la plus largement utilisée en raison de son acceptation universelle par les photographes, les distributeurs,
 les agences de presse, les archivistes et les développeurs. Il est embarqué, contrairement à Extensible Metadata Platform ou XMP qui est un format de métadonnées basé sur XML, pas formcément embarqué, et extensible.
-Le schéma définit la structure, les propriétés et les champs des métadonnées, afin que les images soient décrites de manière optimale et facilement accessibles ultérieurement."
-- EXIF EXangeable Information File Format : elles sont générées à la création du fichier et n'ont pas vocation à être modifiées, elle constitue la description technique de plus bas niveau du document.
-- PREMIS : "Le dictionnaire de données
-PREMIS pour la préservation des métadonnées est la norme internationale pour les métadonnées permettant la préservation des objets numériques et leur utilisation à long terme. "
-- METS :
-"Le schéma METS est un standard pour l'encodage de métadonnées descriptives, administratives et structurelles concernant des objets dans une bibliothèque numérique, exprimé en XML"
-- EAD : "Encoded Archival Description (EAD) est une norme XML de codage des outils de recherche pour les archives"
-- TEI : "La TEI (Text Encoding Initiative) est un consortium qui élabore et gère collectivement un standard pour la représentation de textes sous forme numérique"
-- MarcXml : cadre pour travailler avec les données MARC dans un environnement XML
-- Alto : "ALTO (Layout and text object) stocke les informations de mise en page et le texte reconnu par l' OCR des pages de tout type de documents imprimés, tels que des livres, des revues et des journaux"
+>Le schéma définit la structure, les propriétés et les champs des métadonnées, afin que les images soient décrites de manière optimale et facilement accessibles ultérieurement."
+>- EXIF EXangeable Information File Format : elles sont générées à la création du fichier et n'ont pas vocation à être modifiées, elle constitue la description technique de plus bas niveau du document.
+>- PREMIS : "Le dictionnaire de données
+>PREMIS pour la préservation des métadonnées est la norme internationale pour les métadonnées permettant la préservation des objets numériques et leur utilisation à long terme. "
+>- METS :
+>"Le schéma METS est un standard pour l'encodage de métadonnées descriptives, administratives et structurelles concernant des objets dans une bibliothèque numérique, exprimé en XML"
+>- EAD : "Encoded Archival Description (EAD) est une norme XML de codage des outils de recherche pour les archives"
+>- TEI : "La TEI (Text Encoding Initiative) est un consortium qui élabore et gère collectivement un standard pour la représentation de textes sous forme numérique"
+>- MarcXml : cadre pour travailler avec les données MARC dans un environnement XML
+>- Alto : "ALTO (Layout and text object) stocke les informations de mise en page et le texte reconnu par l' OCR des pages de tout type de documents imprimés, tels que des livres, des revues et des journaux"
 
 
 ---
@@ -192,7 +201,16 @@ On peut les regrouper en 3 types, qui se combinent :
 ![](img/dc.png)
 
 ???
-Exif concerne essentiellement les données techniques, mais peut embarquer des données de géolocalisation, qui viennent cette fois documenter l'objet représenté. > Utilisé par Flickr.
+>Exif concerne essentiellement les données techniques, mais peut embarquer des données de géolocalisation, qui viennent cette fois documenter l'objet représenté. > Utilisé par Flickr.
+---
+layout: inverse
+class: middle center
+
+#Exercices sur les métadonnées IPTC
+
+À l'aide du logiciel IrfanView (lanceur de programme), ouvrez le dossier `BM` et essayez de visualiser les métadonnées IPTC d'un des documents.
+???
+>Liste des métadonnées utilisables dans [Exiftool](https://sno.phy.queensu.ca/~phil/exiftool/TagNames/)
 
 ---
 
@@ -200,7 +218,7 @@ template: inverse
 class: left
 
 # Le Dublin Core
-<br><br>
+<br>
 Ce schéma est un ensemble de métadonnées créé en 1995 par l'OCLC à Dublin aux USA. Il permet de décrire n'importe quel type de document mis en ligne.
 Il avait pour objet d'aider à l'indexation du web,
 mais les moteurs ne s'en sont pas emparés, préférant développer leurs propres algorythmes (pour des raisons commerciales).
@@ -217,7 +235,7 @@ Le Dublin Core prévoit 15 éléments tous facultatifs et tous répétables, qui
 
 [Source : BnF](http://www.bnf.fr/fr/professionnels/formats_catalogage/a.f_dublin_core.html)
 
-[.footnote[Le site de Dublin Core]](http://dublincore.org/)
+[Le site de Dublin Core](http://dublincore.org/)
 
 
 ---
@@ -238,13 +256,12 @@ Le fait de proposer des labels (étiquettes) en langage naturel rend le modèle 
 Le Dublin Core est l'un des schémas minimum requis pour rendre les données interopérables, c'est à dire accessibles, à d'autres bibliothèques numériques au travers du protocole **OAI-PMH**.
 
 ???
-DC Qualifié ex :
-- Title > alternative
-- Relation > hasPart, isPartOf, etc.
+>- Title > alternative
+>- Relation > hasPart, isPartOf, etc.
 
-Le protocole OAI-PMH (Open Archives Initiative - Protocol for Metadata Harvesting) est à la base de l’interopérabilité entre bibliothèques numériques (un peu comme peut l’être le Z39.50). Il est issu des travaux de la Convention de Santa Fé en 1999, aujourd’hui OAI-PMH est en V2 (2002). Il est basé sur le protocole HTTP (client/serveur avec les méthodes GET et POST) et XML (pour l’encodage des réponses).
+>Le protocole OAI-PMH (Open Archives Initiative - Protocol for Metadata Harvesting) est à la base de l’interopérabilité entre bibliothèques numériques (un peu comme peut l’être le Z39.50). Il est issu des travaux de la Convention de Santa Fé en 1999, aujourd’hui OAI-PMH est en V2 (2002). Il est basé sur le protocole HTTP (client/serveur avec les méthodes GET et POST) et XML (pour l’encodage des réponses).
 
-Il permet d’échanger, de manière asynchrone, des données dans le but de multiplier les accès aux documents numériques en les « exposants » sur plusieurs plateformes, d’alimenter des agrégateurs de contenus thématiques ou de reconstituer des corpus virtuellement.
+>Il permet d’échanger, de manière asynchrone, des données dans le but de multiplier les accès aux documents numériques en les « exposants » sur plusieurs plateformes, d’alimenter des agrégateurs de contenus thématiques ou de reconstituer des corpus virtuellement.
 ---
 template: inverse
 class: left
@@ -265,11 +282,11 @@ Cette particularité d’avoir été pensé par et pour des projets scientifique
 
 
 ???
-Omeka est pensé comme un CMS (content management system).
+>Omeka est pensé comme un CMS (content management system).
 
-Ce gestionnaire de contenu est bâti autour d’un cœur, le moteur, et d’une base de donnée lamp. On peut très facilement lui ajouter des plugins pour augmenter ses possibilités et l’adapter à ses besoins. On peut aussi très facilement avoir recours à des développeurs pour créer des plugins sur mesure (Kiosque).
+>Ce gestionnaire de contenu est bâti autour d’un cœur, le moteur, et d’une base de donnée lamp. On peut très facilement lui ajouter des plugins pour augmenter ses possibilités et l’adapter à ses besoins. On peut aussi très facilement avoir recours à des développeurs pour créer des plugins sur mesure (Kiosque).
 
-interopérabilité et partage des données à
+>interopérabilité et partage des données à
 l'aide de différentes méthodes : RSS, OAI-PMH, RDF
 ---
 template: inverse
@@ -286,13 +303,14 @@ class: two-columns
 .right-column[
 ###[Plugins](https://omeka.org/classic/plugins/)
 ####- Expositions (Exhibits)
-####-  Simples pages
+####- Simples pages
 ####- Geolocation
-####- Frise chronologique ([Neatline](https://omeka.org/classic/plugins/NeatlineTime/))
+####- Frise chronologique (Neatline)
+####- Scripto
 ]
 ???
 
-Une définition précise de votre projet va déterminer le choix des plugins à mettre en œuvre. À qui je vaux m'adresser, quels sont les métadonnées dont je dispose / que je veux exploiter, ais-je les moyens techniques de déployer et maintenir un Omeka avec des plugins dont il faudra veuiller à la mise à jour.
+>Une définition précise de votre projet va déterminer le choix des plugins à mettre en œuvre. À qui je vaux m'adresser, quels sont les métadonnées dont je dispose / que je veux exploiter, ais-je les moyens techniques de déployer et maintenir un Omeka avec des plugins dont il faudra veuiller à la mise à jour.
 ---
 template: inverse
 class: left
@@ -319,8 +337,8 @@ Donne accès à la liste des collection, chacune d'elles regroupant des items (u
 ####- Moteur de recherche
 Donne accès au moteur de recherche avancé
 
+[Aller au jour 2](jour2.html)
 
-[.footnote[Jour 2]](jour2.html)
 
 
 

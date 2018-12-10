@@ -33,7 +33,7 @@ class: center
 
 ---
 layout: inverse
-class: left
+class: middle center
 <br>
 ## .red[Programme]
 <br>
@@ -51,7 +51,7 @@ class: left
 Les 15 éléments du DC sont répétables, aucun n'est obligatoire. Mais des règles d'usage viennent brider cette liberté laissée aux institutions.
 L'intérêt de ce format étant l'intéropérabilité, on a besoin d'un minimum de règles communes, il convient également d'utiliser des vocabulaires contrôlés (Rameau, Garnier, type MIME, etc.). Ces règles sont aussi établies par les institutions qui ont l'ambition d'agréger des documents numériques grâce au protocole OAI-PMH.
 
-Ainsi la `BnF` propose un [guide d'usage](http://www.bnf.fr/fr/professionnels/formats_catalogage/a.f_dublin_core.html) , et "impose" [quelques règles](http://www.bnf.fr/documents/Guide_oaipmh.pdf) pour pouvoir être éligible au moissonnage.
+Ainsi la BnF propose un [guide d'usage](http://www.bnf.fr/fr/professionnels/formats_catalogage/a.f_dublin_core.html) , et "impose" [quelques règles](http://www.bnf.fr/documents/Guide_oaipmh.pdf) pour pouvoir être éligible au moissonnage.
 >.cite[Conventions BnF
 >>Chaque élément possède l’un des quatre statuts suivants :
 
@@ -62,17 +62,20 @@ Ainsi la `BnF` propose un [guide d'usage](http://www.bnf.fr/fr/professionnels/fo
 
 
 ???
-Le protocole OAI-PMH est un moyen d'échanger sur Internet des métadonnées entre plusieurs institutions, afin de multiplier les accès aux documents numériques.
+>Le protocole OAI-PMH est un moyen d'échanger sur Internet des métadonnées entre plusieurs institutions, afin de multiplier les accès aux documents numériques.
 
-Il permet :
+>Il permet :
 
-d'accroître la visibilité des collections numériques sur Internet,
-de reconstituer virtuellement des corpus à partir de ressources accessibles sur différents sites,
-d'alimenter des portails thématiques.
-Son utilisation est libre, tout comme ses spécifications, disponibles sur le site www.openarchives.org.
+>>d'accroître la visibilité des collections numériques sur Internet,
+>>de reconstituer virtuellement des corpus à partir de ressources accessibles sur différents sites,
+>>d'alimenter des portails thématiques.
+>Son utilisation est libre, tout comme ses spécifications, disponibles sur le site www.openarchives.org.
 ---
+template: inverse
+class: center middle
+#Exercice de description de documents en Dublin Core
 
-
+Dans le dossier `corpus` que vous allez télécharger à nouveau, choisissez quelques images du dossier `aCataloguer` et faites en la notice Dublin Core dans le tableur `Grille_DC` aidez-vous du `Manuel_DC_Nancy`
 ---
 
 layout: inverse
@@ -93,6 +96,7 @@ Dans Omeka :
 L'import en masse passera quasiment  toujours par un fichier de métadonnées en csv et l'upload préalable sur le serveur via un FTP. Dans Omeka on peut utiliser des plugins :
 - CsvImport
 - Dropbox
+---
 
 ---
 layout: inverse
@@ -113,7 +117,12 @@ class: left
 <br>
 <br>
 ![](img/addItemTag.png)
+---
+template: inverse
+class: center middle
+#Exercices d'importation de documents
 
+Importer dans Omeka les documents que vous avez catalogués en Dublin Core.
 
 
 ---
@@ -139,12 +148,12 @@ Le mode d'accès aux données est une forme de valorisation (bien entendu dépen
 - on peut aussi envisager une accès .cite[graphique], sous forme de dataviz (peut servir à donner à voir une typologie, une "masse") ...
 
 ???
-Illustrer cette partie par des exemples
-- moteur : le choix des métadonnées doit orienter la façon dont on trouvera les document, on sait qui on vise
-- visuel : on privilégie l'accès par l'image, les métadonnées
-- éditorial ;
-- cartographique ;
-- graphique ...
+>Illustrer cette partie par des exemples
+>- moteur :
+>- visuel :
+>- éditorial :
+>- cartographique :
+>- graphique :
 
 ---
 template: inverse
@@ -153,7 +162,7 @@ class: left
 ### Créer une exposition
 ![](img/browseExi.png)
 
-Une exposition est une visite commentée de vos contenus, avec texte descriptif et mises en pages personnalisées.
+Une exposition est une visite commentée de vos contenus, avec texte descriptif et mises en pages personnalisées ([voir aussi le mode d'emploi Limonade & Co)](http://www.limonadeandco.fr/presentation-du-plugin-exhibitbuilder-omeka/)
 <br>
 - Pour en créer une, cliquez sur l'onglet "Expositions" (exhibits) ;
 - puis sur "Ajouter une exposition" (add an exhibit) ;
@@ -219,6 +228,15 @@ class: left
 - Cliquez sur le bouton vert "Apply"
 ---
 template: inverse
+class: center middle
+#Création d'une exposition
+
+Vous allez essayer de créer une mini exposition à l'aide des documents importés tout à l'heure.
+
+
+
+---
+template: inverse
 class: center
 
 <br>
@@ -240,8 +258,7 @@ class: left
 - [Mode d'emploi de `Exhibit builder` par Limonade and Co](http://www.limonadeandco.fr/presentation-du-plugin-exhibitbuilder-omeka/)
 - [Règles de nommage du ministère de la Culture](http://www.culture.gouv.fr/Thematiques/Innovation-numerique/Numerisation/Recommandations-techniques/Identifiants-d-images-numerisees)
 - [Codes des établissements producteurs en France](http://www.culture.gouv.fr/Thematiques/Innovation-numerique/Numerisation/Recommandations-techniques/Identifiants-des-images-numerisees-codes-pour-les-producteurs/Carte-des-codes-INSEE-regions-et-departements)
-- [Cours de Catherine Morel-Pair sur les métadonnées et XML]
-(https://docplayer.fr/14470005-Metadonnees-et-xml-une-introduction.html)
+- [Cours de Catherine Morel-Pair sur les métadonnées et XML](https://docplayer.fr/14470005-Metadonnees-et-xml-une-introduction.html)
 - [Guide d'interopérabilité OAI-PMH
 pour un référencement des
 documents numériques dans Gallica](http://www.bnf.fr/documents/Guide_oaipmh.pdf)
@@ -250,18 +267,24 @@ template: inverse
 class: left
 
 # Exemples de sites réalisés avec Omeka
-<br>
-## Omeka 2
+
+## Omeka Classic
 - [Bibliothèque numérique de l'observatoire de Paris](https://bibnum.obspm.fr/) ;
 - [Le Kiosque Lorrain](http://www.kiosque-lorrain.fr/) ;
 - [Bibliothèque renaissance à Nancy](http://bmn-renaissance.nancy.fr/) ;
-- [Bibliothèque numérique de l'Université de Perpignan](https://estudi.univ-perp.fr/)
-
-## Omeka S
-.cite[S] pour sémantique, cette version est aussi multi-site.
-- [PSL (Paris Sciences et Lettres) ](https://bibnum.explore.univ-psl.fr/s/psl/page/accueil)
+- [Bibliothèque numérique de l'Université de Perpignan](https://estudi.univ-perp.fr/) ;
+- [Bibliothèque numérique Hortalia](http://bibliotheque-numerique.hortalia.org/)
+- [Exemple d'archive sonore](http://arxiudigital.ateneubcn.org/) ;
+- [Transcrire, plugin Scripto](http://transcrire.huma-num.fr/).
+## Documentation Omeka
+- [Documentation officielle, en anglais](https://omeka.org/classic/docs/) ;
+- [Mode d'emploi de Exhibits par Limonade & Co](http://www.limonadeandco.fr/presentation-du-plugin-exhibitbuilder-omeka/) ;
+- [Liste des projets utilisant Omeka Classic (site Omeka)](https://omeka.org/classic/directory/).
 
 [Retour au jour 1](intro.html)
+
+
+
 
 
 

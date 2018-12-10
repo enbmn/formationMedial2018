@@ -103,7 +103,12 @@ a, a > code {
     text-decoration: underline;
 }
 
-
+code {
+  -moz-border-radius: 3px;
+  -web-border-radius: 3px;
+  background: #679024;
+  border-radius: 3px;
+}
 }
 
 
@@ -191,5 +196,5 @@ a, a > code {
 .right-column {
     width: 50%;
     float: right;
-    
+
 }
