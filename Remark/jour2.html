@@ -34,19 +34,53 @@ class: center
 ---
 layout: inverse
 class: middle center
+
+#Vendredi 14
+
 <br>
-## .red[Programme]
-<br>
-#### 1. Décrire en Dublin Core
-#### 2. Importer des données
-#### 3. Visualiser / valoriser
-#### 4. Construire une exposition avec Exhibits
+#### 1. Bonnes pratiques
+#### 2. Organisation du travail
+#### 3. Décrire en Dublin Core
+#### 4. Importer des données
+#### 5. Editorialiser, comment, pourquoi
+#### 6. Construire une exposition avec Exhibits
+---
+class: center middle
+
+# 1.Bonnes pratiques
+
 ---
 
-layout: inverse
-class: left
+## Les droits
+- les licences libres
+- le domaine public
+- droits négociés
 
-# Décrire en Dublin Core
+## La qualité des documents
+- attention à la définition
+- la cohérence entre les documents
+- la granularité
+
+---
+class: center middle
+
+#2. Organisation du travail
+
+---
+##Identifier les compétences
+
+Ne peut reposer sur une seule personne.
+
+##Le mode projet
+
+Pour les équipes restreintes
+
+
+
+---
+class: center middle
+
+#3. Décrire en Dublin Core
 
 Les 15 éléments du DC sont répétables, aucun n'est obligatoire. Mais des règles d'usage viennent brider cette liberté laissée aux institutions.
 L'intérêt de ce format étant l'intéropérabilité, on a besoin d'un minimum de règles communes, il convient également d'utiliser des vocabulaires contrôlés (Rameau, Garnier, type MIME, etc.). Ces règles sont aussi établies par les institutions qui ont l'ambition d'agréger des documents numériques grâce au protocole OAI-PMH.
@@ -78,12 +112,18 @@ class: center middle
 Dans le dossier `corpus` que vous allez télécharger à nouveau, choisissez quelques images du dossier `aCataloguer` et faites en la notice Dublin Core dans le tableur `Grille_DC` aidez-vous du `Manuel_DC_Nancy`
 ---
 
-layout: inverse
-class: left
-#  Importer des données
 
+class: center middle
+# 4. Importer des données
+---
+
+#### Importation en masse
+
+L'import en masse passera quasiment  toujours par un fichier de métadonnées en csv et l'upload préalable sur le serveur via un FTP. Dans Omeka on peut utiliser des plugins :
+- CsvImport
+- Dropbox
 ####Importation manuelle
-Dans Omeka :
+
 - Add an Items ;
    - renseigner les métadonnées Dublin Core ;
    - indiquer le type de métadonnées complémentaire (éventuel) ;
@@ -92,11 +132,6 @@ Dans Omeka :
    - choisir éventuellement une collection de rattachement (un item ne peut appartenir qu'à une collection, sauf à utiliser le plugin Collection Tree)
    - choisir le statut du document : public et/ou mis en avant (en fonction du thème choisi, sera présent en page d'accueil par exemple)
 
-#### Importation en masse
-L'import en masse passera quasiment  toujours par un fichier de métadonnées en csv et l'upload préalable sur le serveur via un FTP. Dans Omeka on peut utiliser des plugins :
-- CsvImport
-- Dropbox
----
 
 ---
 layout: inverse
@@ -126,39 +161,23 @@ Importer dans Omeka les documents que vous avez catalogués en Dublin Core.
 
 
 ---
-layout: inverse
-class: left
-#  Visualiser / valoriser
->.cite[Une bibliothèque numérique est une base de donnée dotée d'une interface permettant de voir un contenu  (qui peut être une image ou un texte) et sa description (sa notice).]
+class: center middle
+# 5. Editorialiser, comment, pourquoi ?
+---
 
-Mais c'est la conception minimaliste.
-Il convient de dépasser ce stade et de se poser un certain nombre de question.
+Donner du sens à sa base de données
+- expos..
 
-Que veut-on donner à voir :
-- Quel mode d'entrée dans le document numérique
-  - par la notice ;
-  - par l'image
-
-
-Le mode d'accès aux données est une forme de valorisation (bien entendu dépendante du corpus et du projet)
-- .cite[scientifique], par le moteur ;
-- .cite[grand public], l'accès se fait par l'image directement ;
-- .cite[public motivé], on propose un accès guidé, .cite[éditorial] pour entrer dans la bibliothèque numérique ;
--  pour certains type de données l'accès sera .cite[cartographique] ;
-- on peut aussi envisager une accès .cite[graphique], sous forme de dataviz (peut servir à donner à voir une typologie, une "masse") ...
-
-???
->Illustrer cette partie par des exemples
->- moteur :
->- visuel :
->- éditorial :
->- cartographique :
->- graphique :
+Donner de la visibilité :
+- RS
 
 ---
 template: inverse
-class: left
-# Construire une exposition avec Exhibits
+class: center middle
+# 6. Construire une exposition avec Exhibits
+---
+
+
 ### Créer une exposition
 ![](img/browseExi.png)
 

@@ -28,29 +28,40 @@ class: center middle
 
 <br>
 
-[Sources et références : Github Éric Nunes](https://github.com/enbmn)
+[Sources et références : Github Éric Nunes](https://github.com/enbmn/formationMedial2018)
 ---
 layout: inverse
 class: center middle
 
 # Jeudi 13 décembre
-## .red[Programme]
+
 #### 1. Le document numérique
-#### 2. Nommage des fichiers
-#### 3. Définir les métadonnées de description d'un document numérique
-#### 4. Présentation du Dublin Core
-#### 5. Brève présentation d'Omeka
+#### 2. Les formats d'images
+#### 3. Nommage des fichiers
+#### 4. Les métadonnées
+#### 5. Présentation du Dublin Core
+#### 6. La valorisation
+#### 7. Présentation d'Omeka
 <br>
-9h30-12h30 & 13h30-16h30
 
 [Aller au jour 2](jour2.html)
 ---
+class: center middle
+#Documents de travail
+Vous allez récupérer sur votre poste les documents disponibles sur ce site :
 
+https://github.com/enbmn/formationMedial2018
+
+puis télécharger le dossier Corpus, qui contient les documents utiles pour les exercices.
+---
 layout: inverse
-class: left
+class: center middle
 <br>
 <br>
-# Le document numérique
+# 1. Le document numérique
+
+
+---
 #### On parlera plutôt d'objet numérique :
 
 Ce terme d'objet numérique désigne toute manifestation numérique, native ou non.
@@ -64,16 +75,31 @@ L'image numérique qui nous occupe ici est donc un objet numérique, composé de
 sa parenté avec l'objet physique (il ne se substitue jamais à lui, mais le redouble) ces données doivent être lues par une interface (logiciel, OS) qui a elle-même besoin d'un terminal (ordinateur, smartphone, etc.) pour diffuser le document.
 
 ???
->stockage : chacun est à même de stocker des documents numériques, dans le cloud, sur disque durn clef USB, etc...
+>stockage : chacun est à même de stocker des documents numériques, dans le cloud, sur disque dur clef USB, etc...
 
 >conservation : la conservation est basée sur un workflow spécifique et propre au type de
 document numérique. Il suppose une gestion fine du cycle de vie du document, ce qui suppose des métadonnées particulières et une ingénierie spécifique.
 
 ---
+class: center middle
+#2. Les formats d'images
+---
+<br>
+###Conservation
+###Diffusion
+###
 
-layout: inverse
-class: left
-# Nommage des fichiers
+
+???
+
+Donner des exemples
+
+
+---
+class: center middle
+
+#3. Nommage des fichiers
+---
 
 ####Les conventions de nommage de fichiers en informatique sont simples :
 - pas d'espaces ;
@@ -109,7 +135,7 @@ Le premier format est sémantique : calqué sur la cote du document, lisible et 
 
 .cite[Voir :]
 - [Codes des établissements producteurs en France](http://www.culture.gouv.fr/Thematiques/Innovation-numerique/Numerisation/Recommandations-techniques/Identifiants-des-images-numerisees-codes-pour-les-producteurs/Carte-des-codes-INSEE-regions-et-departements)
-- [Trouver un identifiant via le Catalogue collectif de France](https://ccfr.bnf.fr/portailccfr/jsp/public/index.jsp?failure=%2Fjsp%2Fpublic%2Ffailure.jsp&success=%2Fjsp%2Fpublic%2Findex.jsp&profile=public)
+- [Trouver un identifiant via le Catalogue collectif de France](https://ccfr.bnf.fr/portailccfr/jsp/public/index.jsp?action=public_search_result_cartography)
 
 
 ???
@@ -126,11 +152,13 @@ class: middle center
 Récupérer sur votre bureau les dossiers `aRenommer` et `aRenommer2` et rétablir un nommage conforme, avec si possible vos codes d'établissement.
 
 ---
-template: inverse
-class: left
+class: center middle
+
 <br>
 <br>
-# Les métadonnées
+#4. Les métadonnées
+---
+
 
 Pour décrire un objet numérique on utilise des métadonnées.
 .cite[déf. : (du grec meta : au delà de)
@@ -160,11 +188,12 @@ Il existe autant de types de métadonnées que de besoins, dans nos métiers cit
 - .cite[[Exif](https://fr.wikipedia.org/wiki/Exchangeable_image_file_format)], pour les données techniques des images ;
 - .cite[[Premis](https://www.loc.gov/standards/premis/)], pour la conservation numérique, exprimées en XML, on les embarque dans les fichiers [METS](http://www.loc.gov/standards/mets/) ;
 
-- .cite[[Dublin Core](http://dublincore.org/)], elles sont le socle des descriptions dans Omeka ;
 - .cite[[EAD](https://www.loc.gov/ead/)], pour structurer les données de description archivistique ;
 - .cite[[TEI](https://www.tei-c.org)], pour les données descriptives des textes, afin de les transcrire ;
 - .cite[[MarcXML](http://www.loc.gov/standards/marcxml/marcxml-overview.html)], pour les données  bibliographiques (exprimées en XML) ;
-- .cite[[Alto](https://www.loc.gov/standards/alto/)], pour structurer et rendre les données OCR textuelles et graphiques des images.
+- .cite[[Alto](https://www.loc.gov/standards/alto/)], pour structurer et rendre les données OCR textuelles et graphiques des images ;
+
+- .cite[[Dublin Core](http://dublincore.org/)], elles sont le socle des descriptions dans Omeka.
 
 
 ???
@@ -215,9 +244,10 @@ class: middle center
 ---
 
 template: inverse
-class: left
+class: center middle
 
-# Le Dublin Core
+#5. Le Dublin Core, présentation
+---
 <br>
 Ce schéma est un ensemble de métadonnées créé en 1995 par l'OCLC à Dublin aux USA. Il permet de décrire n'importe quel type de document mis en ligne.
 Il avait pour objet d'aider à l'indexation du web,
@@ -263,10 +293,39 @@ Le Dublin Core est l'un des schémas minimum requis pour rendre les données int
 
 >Il permet d’échanger, de manière asynchrone, des données dans le but de multiplier les accès aux documents numériques en les « exposants » sur plusieurs plateformes, d’alimenter des agrégateurs de contenus thématiques ou de reconstituer des corpus virtuellement.
 ---
-template: inverse
-class: left
-# Omeka
 
+
+layout: inverse
+class: center middle
+#  6. La valorisation
+---
+Quel est le projet : commande d'élu, projet scientifique, évènementiel, etc. ?
+
+Se poser les bonnes questions :
+  > - corpus
+  > - public
+  > - moyens
+  
+Pour proposer une entrée dans la bibliothèque numérique :
+- .cite[scientifique], importance du moteur, des sources... ;
+- .cite[grand public], l'accès peut se faire par une thématique, on peut aussi proposer un accès guidé, .cite[éditorial], le visuel primera sur le propos  ;
+- penser à varier l'accès aux documents :
+>- .cite[cartographique] ;
+>- .cite[graphique], sous forme de dataviz (peut servir à donner à voir une typologie, une "masse") ...
+> - .cite[chronologique]
+
+Un outil adapté : Omeka
+
+???
+
+
+---
+
+
+template: inverse
+class: center middle
+#7. Omeka
+---
 Omeka est un logiciel libre (licence GPL) et gratuit conçu par le _Roy Rosenzweig Center for History and New Media_ pour des usages en SHS (ils ont aussi conçu Zotero et Tropy).
 
 Cette particularité d’avoir été pensé par et pour des projets scientifiques le rend très populaire. Il est surtout utilisé dans les universités, et quelques bibliothèques publiques.
@@ -289,6 +348,19 @@ Cette particularité d’avoir été pensé par et pour des projets scientifique
 >interopérabilité et partage des données à
 l'aide de différentes méthodes : RSS, OAI-PMH, RDF
 ---
+
+#Quelques exemples
+- [Bibliothèque numérique de l'observatoire de Paris](https://bibnum.obspm.fr/) ;
+- [Le Kiosque Lorrain](http://www.kiosque-lorrain.fr/) ;
+- [Bibliothèque renaissance à Nancy](http://bmn-renaissance.nancy.fr/) ;
+- [Bibliothèque numérique de l'Université de Perpignan](https://estudi.univ-perp.fr/) ;
+- [Bibliothèque numérique Hortalia](http://bibliotheque-numerique.hortalia.org/)
+- [Exemple d'archive sonore](http://arxiudigital.ateneubcn.org/) ;
+- [Transcrire, plugin Scripto](http://transcrire.huma-num.fr/).
+
+
+---
+
 template: inverse
 class: two-columns
 
@@ -323,6 +395,7 @@ class: left
 ####- Import de lots de données
 
 ---
+
 template: inverse
 class: left
 ## Front office
@@ -337,8 +410,18 @@ Donne accès à la liste des collection, chacune d'elles regroupant des items (u
 ####- Moteur de recherche
 Donne accès au moteur de recherche avancé
 
-[Aller au jour 2](jour2.html)
+---
 
+##Prérequis techniques à l'utilisation d'Omeka
+
+- stockage
+- serveurs
+- équipe
+
+---
+##Les limites d'Omeka
+
+[Aller au jour 2](jour2.html)
 
 
 
