@@ -53,10 +53,10 @@ Ouvrez le navigateur et rendez-vous sur :
 
 https://github.com/enbmn/formationMedial2018
 
-Vous allez télécharger le dossier `Corpus`, qui contient les documents utiles pour les exercices que nous alons faire durant ces deux jours, si vous disposez d'une clef USB, enregistrer les dessus (nous changeaons de salle demain).
+Vous allez télécharger le dossier `Corpus` (lien vers les documents...), qui contient les documents utiles pour les exercices que nous alons faire durant ces deux jours, si vous disposez d'une clef USB, enregistrer les dessus (nous changeaons de salle demain).
 
 
-puis éventuellement récupérer sur votre poste les documents disponibles. Le dossier Remark contient les support de cours. Il suffit de lancer les deux fichiers `.html`
+Puis éventuellement, récupérer le dossier github complet (bouton vert, download). Le dossier Remark contient les support de cours. Il suffit de lancer les deux fichiers `.html`
 
 
 ???
@@ -92,13 +92,12 @@ Ce terme d'objet numérique désigne toute manifestation numérique, native ou n
 
 .cite[Dans Omeka l'objet numérique s'appelle un `item` (`contenu`)]
 
-L'objet numérique (parfois composés d'autres objets numériques), ce sont :
-- des données :
+Un objet numérique (parfois composé d'autres objets numériques) est donc constitué de données :
 > >-  à génerer et lire (au travers d'une interface)
 >> - à stocker (tout le temps de son utilisation)
 >>-  à décrire (par des métadonnées, pour les signaler)
 >> - à conserver (sur le long terme, assurer son cycle de vie)
->>- à diffuser (au travers d'un terminal)
+>>- à mettre à disposition et diffuser (au travers d'un terminal)
 
 Tout comme l'objet physique.
 
@@ -112,28 +111,43 @@ document numérique. Il suppose une gestion fine du cycle de vie du document, ce
 class: center middle
 #2. Les formats d'images
 ---
-<br>
-À chaque type de fichiers numérique va correspondre un usage particulier.
+class: two-columns
 
+À chaque type de fichiers numérique va correspondre un usage particulier, globalement conservation et/ou diffusion.
 Le type de fichiers se reconnaît à son extension.
 
-####Conservation
-Le fichier sera faiblement ou pas du tout échantillonné (compressé), pour garantir un retour à l'"original" et une qualité optimale. Mais le poids pourra être multiplié par 4.
+.left-column[####Conservation
+>Le fichier sera faiblement ou pas du tout échantillonné (compressé), pour garantir un retour à l'original et une qualité optimale. Ces fichiers sont très lourds, et en général nécessitent des plugins (ou logiciels particuliers) pour être lus.
 - TIFF
 - PNG
 - JPEG2000
 - PDF/A
 
-####Diffusion
-Pour un usage d'impression courant et une visualisation confortable, on préconise des formats dits destructeurs, qui compressent l'image.
+.red[.left[|TIFF  |300 dpi
+--|---|--
+| n&b | 1 mo |
+|   Niveaux de gris|8,2 mo
+|Couleur|24,7 mo]]
+]
+
+
+
+.right-column[####Diffusion
+>Pour un usage courant et une visualisation confortable, on préconise des formats dits destructeurs, qui compressent l'image. On peut aussi réduire la taille en pixel de l'image. Ils sont lisible dans les navigateurs
+<br>
+<br>
+<br>
 - JPEG
-- PDF
+- PDF]
+
+<br>
 
 
 ???
 La compression JPEG supprime des pixels au valeur très proche, plus elle est élevée, plus l'image pixélise (moins de pixel = moins de détail)
 
 Donner des exemples
+- Facteur 4 si on double la définition : 300 dpi = 1mo > 600 dpi = 4mo
 
 
 ---
@@ -148,33 +162,42 @@ class: center middle
 - pas de caractères spéciaux (#, @; !, etc.) ;
 - éviter de dépasser 30 caractères extension comprise.
 
-###Aboutit à des règles d'usages :
+###Les règles d'usages :
 - remplacer espaces et "mots vides" (le, la, de)" par underscore ( .cite[_] , tiret du 8 sur pc) ;
 >- ou bien utiliser la syntaxe camelCase ;
->>=> minuscule au premier mot, les autres sont accolés et comporte une majuscule.
->>>ex : imageNumeriqueNancy.jpg
-- dates au format 20181213 (norme ISO 8601) ;
+>>=> minuscule au premier mot, les autres sont accolés et commencent par une majuscule.
+>>>.red[ex : imageNumeriqueNancy.jpg]
+- utiliser les dates au format 20181213 (norme ISO 8601) ;
 
 ---
-
+class: two-columns
 ## Conventions pour la numérisation
-### Format "sémantique"
+.left-column[#### Format "sémantique"
 - le préfixe sera toujours l'identification de l'établissement (RCR, etc.) ;
 - suivra la cote ;
 - un numéro de séquence sur 4 chiffres ou plus.
-=> ex : B543956101M00050_0001.jpg > Ms 50 des Bibliothèques de Nancy, vue 1, la correspondance vue/page peut être établie dans la bibliothèque numérique.
-À pour préalable l'établissement d'un pplan de nommage prenant en compte tous les cas de figures.
 
-### Format codé
+.red[=> ex : B543956101M00050_0001.jpg > Ms 50 des Bibliothèques de Nancy, vue 1, la correspondance vue/page peut être établie dans la bibliothèque numérique à l'aide d'un métas dédiée.]
+
+À pour préalable l'établissement d'un plan de nommage prenant en compte tous les cas de figures.
+]
+.right-column[
+#### Format codé
 - id de l'établissement ;
 - code arbitraire ;
 - séquence.
 Plus lourd, établisement d'une table de correspondance, indexation des images.
 
+
 On pourra ajouter des suffixes pour les usages (basse définition, conservation etc.)
+
+<br>
+<br>
+<br>
+<br>
 - [Codes des établissements producteurs en France](http://www.culture.gouv.fr/Thematiques/Innovation-numerique/Numerisation/Recommandations-techniques/Identifiants-des-images-numerisees-codes-pour-les-producteurs/Carte-des-codes-INSEE-regions-et-departements)
 - [Trouver un identifiant via le Catalogue collectif de France](https://ccfr.bnf.fr/portailccfr/jsp/public/index.jsp?action=public_search_result_cartography)
-
+]
 
 ???
 
@@ -207,11 +230,9 @@ Pour décrire et signaler un objet numérique on utilise des métadonnées.
 Pensées à l'origine pour les machines (métadonnées techniques), certaines peuvent aussi être lisibles par l'humain, et être utilisées pour
 enrichir le document lors de sa diffusion (métadonnées sémantiques).
 
+.red[De différentes natures, elles vont aider à structurer, exploiter et diffuser les objets numériques.]
 
 
-> Démonstration de [`Exiftool`](https://www.sno.phy.queensu.ca/~phil/exiftool/) sur différents fichiers, utiliser `IrfanView` pour écrire des métadonnées
-
-> Exemple Flickr, upload d'un fichier
 ---
 
 template: inverse
@@ -222,22 +243,36 @@ class: left
 <br>
 Il existe autant de types de métadonnées que de besoins, dans nos métiers citons les principaux :
 
-####Métadonnées embarquées :
+###Métadonnées embarquées :
 - .cite[[IPTC](https://iptc.org/standards/photo-metadata/iptc-standard), [XMP](https://fr.wikipedia.org/wiki/Extensible_Metadata_Platform)], pour les données des images numériques en TIFF, JPEG, PNG et PDF ;
 - .cite[[Exif](https://fr.wikipedia.org/wiki/Exchangeable_image_file_format)], pour les données techniques des images ;
+<br>
+<br>
 
-####Métadonnées externes :
+####Visualiser ces données, les exploiter :
+>- Démonstration de [`Exiftool`](https://www.sno.phy.queensu.ca/~phil/exiftool/) sur différents fichiers, utiliser `IrfanView` pour écrire des métadonnées
+
+>- Exemple Flickr, upload d'un fichier
+---
+##Métadonnées externes :
 
 - .cite[[EAD](https://www.loc.gov/ead/)], pour structurer les données de description archivistique ;
+
 - .cite[[TEI](https://www.tei-c.org)], pour les données descriptives des textes, et leur transcription ;
+
 - .cite[[MarcXML](http://www.loc.gov/standards/marcxml/marcxml-overview.html)], pour les données  bibliographiques (exprimées en XML) ;
+
 - .cite[[Premis](https://www.loc.gov/standards/premis/)], pour la conservation numérique, exprimées en XML, on les embarque dans les fichiers [METS](http://www.loc.gov/standards/mets/) ;
+
 - .cite[[Alto](https://www.loc.gov/standards/alto/)], pour structurer et rendre les données OCR textuelles et graphiques des images ;
-- .cite[[Dublin Core](http://dublincore.org/)], elles sont le socle des descriptions dans Omeka.
+
+- .cite[[Dublin Core](http://dublincore.org/)], elles sont le socle des descriptions dans Omeka et le format pivot pour l'OAI-PMH.
 
 
 ???
->Schéma : un schéma est
+
+
+>Schéma : un schéma est un ensemble de champs prédéfinis (les balises XML par exemple)
 >- IPTC : "La norme de métadonnées de photo IPTC est la norme la plus largement utilisée en raison de son acceptation universelle par les photographes, les distributeurs,
 les agences de presse, les archivistes et les développeurs. Il est embarqué, contrairement à XMP (Extensible Metadata Platform)  qui est un format de métadonnées basé sur XML, pas formcément embarqué, et extensible.
 >Le schéma définit la structure, les propriétés et les champs des métadonnées, afin que les images soient décrites de manière optimale et facilement accessibles ultérieurement."
@@ -260,14 +295,13 @@ class: left
 <br>
 <br>
 <br>
-On peut néanmoins toutes les regrouper en 3 types, qui se combinent :
+On peut néanmoins toutes les regrouper en 3 catégories, qui se combinent :
 
 - .cite[Descriptives], elles concernent le contenu du document ;
 - .cite[Techniques et structurelles], elles décrivent les caractéristiques techniques du document, sa structure, les prérequis à sa diffusion (format, etc.) ;
 - .cite[Administratives], elles concernent le fournisseur, créateur du document, son cycle de vie.
 
-#### Nous allons nous intéresser au Dublin Core
-.center[![](img/dc.png)]
+
 
 ???
 >Exif concerne essentiellement les données techniques, mais peut embarquer des données de géolocalisation, qui viennent cette fois documenter l'objet représenté. > Utilisé par Flickr.
@@ -277,7 +311,7 @@ class: middle center
 
 #Exercices sur les métadonnées IPTC
 
-À l'aide du logiciel IrfanView (lanceur de programme), ouvrez le dossier `BM` et essayez de visualiser les métadonnées IPTC d'un des documents.
+À l'aide du logiciel `IrfanView` (lanceur de programme), ouvrez le dossier `BM` et essayez de visualiser les métadonnées `IPTC` d'un des documents.
 ???
 >Liste des métadonnées utilisables dans [Exiftool](https://sno.phy.queensu.ca/~phil/exiftool/TagNames/)
 
@@ -285,7 +319,7 @@ class: middle center
 
 template: inverse
 class: center middle
-
+.center[![](img/dc.png)]
 #5. Le Dublin Core, présentation
 ---
 <br>

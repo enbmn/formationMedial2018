@@ -16,7 +16,7 @@ body {
 h1, h2, h5 {
    font-family: 'Spectral';
    margin-bottom: 0;
-   line-height: 1em;
+   line-height: 1,2em;
 }
 
 
@@ -24,7 +24,7 @@ h3, h4 {
     font-family: 'Merriweather';
     font-weight: bold;
     margin-bottom: 0;
-    line-height: 1.2em;
+    line-height: 1em;
 }
 
 h1 {
@@ -36,7 +36,8 @@ h2 {
 }
 
 h3 {
-    font-size: 1.6em;
+    font-size: 1,2em;
+      color: rgb(214, 128, 37);
 }
 
 h4 {
@@ -184,7 +185,7 @@ code {
 /* Two-column layout */
 .left-column {
 
-    width: 50%;
+    width: 47%;
     height: 92%;
     float: left;
 }
@@ -194,7 +195,7 @@ code {
 }
 
 .right-column {
-    width: 50%;
+    width: 47%;
     float: right;
 
 }
