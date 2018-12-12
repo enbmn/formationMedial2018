@@ -214,9 +214,6 @@ Récupérer sur votre bureau les dossiers `aRenommer` et `aRenommer2` et rétabl
 
 ---
 class: center middle
-
-<br>
-<br>
 #4. Les métadonnées
 ---
 <br>
@@ -244,7 +241,7 @@ class: left
 Il existe autant de types de métadonnées que de besoins, dans nos métiers citons les principaux :
 
 ###Métadonnées embarquées :
-- .cite[[IPTC](https://iptc.org/standards/photo-metadata/iptc-standard), [XMP](https://fr.wikipedia.org/wiki/Extensible_Metadata_Platform)], pour les données des images numériques en TIFF, JPEG, PNG et PDF ;
+- .cite[[IPTC](https://iptc.org/standards/photo-metadata/iptc-standard), [XMP](https://fr.wikipedia.org/wiki/Extensible_Metadata_Platform)], pour les données des images numériques en TIFF, JPEG, PNG et PDF . Le XMP peut être embarqué ou exprimé en XML dans un fichier sidecar.
 - .cite[[Exif](https://fr.wikipedia.org/wiki/Exchangeable_image_file_format)], pour les données techniques des images ;
 <br>
 <br>
@@ -266,7 +263,7 @@ Il existe autant de types de métadonnées que de besoins, dans nos métiers cit
 
 - .cite[[Alto](https://www.loc.gov/standards/alto/)], pour structurer et rendre les données OCR textuelles et graphiques des images ;
 
-- .cite[[Dublin Core](http://dublincore.org/)], elles sont le socle des descriptions dans Omeka et le format pivot pour l'OAI-PMH.
+- .cite[[Dublin Core](http://dublincore.org/)], elles sont le socle des descriptions dans Omeka et le format pivot pour l'OAI-PMH ([exemple d'entrepôt]( https://patrimoine.enpc.fr/oai-pmh-repository/request?verb=ListRecords&metadataPrefix=oai_dc)).
 
 
 ???
@@ -404,7 +401,7 @@ class: center middle
 <br>
 Omeka est un logiciel libre (licence GPL) et gratuit conçu par le _Roy Rosenzweig Center for History and New Media_ pour des usages en SHS (ils ont aussi conçu Zotero et Tropy).
 
-Cette particularité d’avoir été pensé par et pour des projets scientifiques le rend très populaire. Il est surtout utilisé dans les universités, et quelques bibliothèques publiques.
+Cette particularité d’avoir été pensé pour les sciences humaines le rend très populaire dans les universités, et quelques bibliothèques publiques.
 
 ### .cite[Une bibliothèque numérique en mode CMS]
 Avec ses points forts :
@@ -412,8 +409,9 @@ Avec ses points forts :
 - orienté sciences humaines ;
 - extensible grâce à des plugins ;
   - personnalisable et hackable
+- personnalisable grâce à des thèmes (templates) ;
 - simple à prendre en main ;
-- fait une large place à la valorisation
+- fait une large place à la valorisation.
 
 
 
@@ -442,17 +440,17 @@ l'aide de différentes méthodes : RSS, OAI-PMH, RDF
 template: inverse
 class: two-columns
 
-##Fonctionnalités du back office
+##Gestionnaire de contenu
 .left-column[
 ###Le cœur
-<br>
+<br><br><br>
 .cite[- Tableau de bord (Dashboard)
 - Contenus (Items)
 - Collections
 - Types de contenus (items types)
 -  Tags]
 
->L'ossature d'Omeka est sa base de données, l'entrepôt ou les contenus sont enregistrés et décrit]
+>L'ossature d'Omeka est sa base de données, qui gère la création, l'enregistrement des contenus et leur structuration]
 .right-column[
 ###Plugins
 <br>
@@ -474,40 +472,58 @@ class: two-columns
 ## Back office
 <br>
 <br>
-.cite[- Réglage des paramètres
-- Gestion des utilisateurs et des droits
-- Configuration du thème et des plugins
-- Gestion des contenus
+Les fonctionnalités d'administration section se gèrent depuis le back office (rôle super administrateur) par les onglets `Plugins`, `Appearence`, `Users`, et `settings`. Ils donnent accès à :
+.cite[- Réglage des paramètres ;
+- Gestion des utilisateurs et des droits ;
+- Configuration du thème et des plugins ;
+- Gestion des contenus ;
 - Import de lots de données]
 ]
 
 .right-column[
 ##Front office
+
 <br>
-<br>
-.cite[- Liste des Items (browse items)
+.cite[- Liste des Items (browse items) ;
 _Donne accès à toute la base._
-- Collections (browse collections)
+- Collections (browse collections) ;
 _Donne accès à la liste des collection, chacune d'elles regroupant des items (un item ne peut être que dans une seule collection, limitation génante)_
-- Tags (éventuellement)
-- Exhibits (browse exhibits)
-- Simple pages (à propos, contact etc...)
-- Moteur de recherche
+- Tags (éventuellement) ;
+- Exhibits (browse exhibits) ;
+- Simple pages (à propos, etc...) ;
+- Moteur de recherche.
 _Donne accès au moteur de recherche avancé_]
 ]
 ---
 
 ##Prérequis techniques à l'utilisation d'Omeka
-Le logiciel est diffusé en licence libre, avec système LAMP (Linux Apache, MySQL, PHP)
-- stockage
-- serveurs
-- équipe
 
+Omeka est un logiciel libre écrit en php. Il s’installe sur un serveur  `LAMP`  (Linux Apache, MySQL, PHP) et repose sur une base de données Mysql.
+Si sa mise en œuvre est relativement aisée néanmoins il faut disposer :
+- de compétences techniques et/ou de l'appui de votre DSIT. Il est aussi possible de le déployer en local pour le tester ;
+- d'un serveur sécurisé doté de suffisament d'espace pour votre projet (anticiper sur la montée en charge) ;
+- d'une puissance de calcul et d'une bande passante importante (en fonction du corpus,  par exemple pour de la presse océrisée indexée avec SolrSearch) ;
+- pouvoir déployer son serveur au sein de sa DSIT ;
+- .red[ou] payer une installation externalisée avec maintenance par la DSIT ;
+- .red[ou] le faire installer et maintenir par un prestataire ;
+- l'achat d'un nom de domaine ;
+- du personnel dédié
+
+.red[Il existe une version gratuite, et des versions sur abonnement sur le site d'[Omeka.net](https://www.omeka.net/)]
 ---
 ##Les limites d'Omeka
+De notre point de vue il en existe assez peu. Et il faut noter que cet outil n'a pas d'équivalent sur le marché.
 
-[Aller au jour 2](jour2.html)
+- Il existe une limite hypothétique à 100 000 items, mais pas de retour sur ce point.
 
+- Comme tous les logiciels libres, on repose sur une communauté, mais dans le cas d'Omeka, celle-ci se développe depuis bientôt 10 ans, par ailleurs une association française s'est créee (voir Sources). De plus, les technologies mises en oeuvre sont bien connues, libres et documentées.
+
+- Reste, mais c'est commun à d'autres outils, les problèmes de maintenance du code en cas de développement personnalisés. Votre plugin devra toujours pouvoir être compatible avec le Core d'Omeka (son "moteur"). Ce point peut être lourd de conséquence si le code n'est pas assez souple et dans le cas d'une mise à jour majeur.
+
+<br>
+.center[[Aller au jour 2](jour2.html)]
+???
+YooLib / Limb Gallery proposé par Arkhenum, est à priori basé sur Omeka, mais est un SAAS, l'outil ne vous appartient pas.
 
 
     </textarea>

@@ -15,21 +15,6 @@ theme: ../themes/remark-dark.css
 name: inverse
 layout: true
 class: inverse
----
-layout: inverse
-class: center
-# Mettre en ligne et valoriser le patrimoine écrit et graphique numérisé
-<!-- ![](img/ours.png) -->
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-[Retour au jour 1](intro.html)
-[.footnote[Sources et références, Github Éric Nunes]](https://github.com/enbmn)
 
 ---
 layout: inverse
@@ -37,13 +22,18 @@ class: middle center
 
 #Vendredi 14
 
-<br>
+
 #### 1. Bonnes pratiques
 #### 2. Organisation du travail
 #### 3. Décrire en Dublin Core
 #### 4. Importer des données
 #### 5. Editorialiser, comment, pourquoi
 #### 6. Construire une exposition avec Exhibits
+
+[Retour au jour 1](intro.html)
+
+[Sources et références, Github Éric Nunes](https://github.com/enbmn)
+
 ---
 class: center middle
 
@@ -86,14 +76,14 @@ Pour les équipes restreintes
 class: center middle
 
 #3. Décrire en Dublin Core
-
+---
 Les 15 éléments du DC sont répétables, aucun n'est obligatoire. Mais des règles d'usage viennent brider cette liberté laissée aux institutions.
 L'intérêt de ce format étant l'intéropérabilité, on a besoin d'un minimum de règles communes, il convient également d'utiliser des vocabulaires contrôlés (Rameau, Garnier, type MIME, etc.). Ces règles sont aussi établies par les institutions qui ont l'ambition d'agréger des documents numériques grâce au protocole OAI-PMH.
 
 Ainsi la BnF propose un [guide d'usage](http://www.bnf.fr/fr/professionnels/formats_catalogage/a.f_dublin_core.html) , et "impose" [quelques règles](http://www.bnf.fr/documents/Guide_oaipmh.pdf) pour pouvoir être éligible au moissonnage.
->.cite[Conventions BnF
->>Chaque élément possède l’un des quatre statuts suivants :
 
+>Conventions BnF
+.cite[>>Dans ce guide chaque élément possède l’un des quatre statuts suivants :
 >>- obligatoire : l’élément doit impérativement figurer dans la notice
 >>- obligatoire si applicable : si l’information est connue, elle doit figurer dans la notice
 >>- recommandé : il est souhaitable que cet élément figure dans la notice
@@ -109,12 +99,13 @@ Ainsi la BnF propose un [guide d'usage](http://www.bnf.fr/fr/professionnels/form
 >>de reconstituer virtuellement des corpus à partir de ressources accessibles sur différents sites,
 >>d'alimenter des portails thématiques.
 >Son utilisation est libre, tout comme ses spécifications, disponibles sur le site www.openarchives.org.
+
 ---
 template: inverse
 class: center middle
 #Exercice de description de documents en Dublin Core
 
-Dans le dossier `corpus` que vous allez télécharger à nouveau, choisissez quelques images du dossier `aCataloguer` et faites en la notice Dublin Core dans le tableur `Grille_DC` aidez-vous du `Manuel_DC_Nancy`
+Dans le dossier `corpus` que vous allez télécharger à nouveau, choisissez quelques images du dossier `aCataloguer` et faites en la notice Dublin Core dans le tableur `Grille_DC`, aidez-vous du `Manuel_DC_Nancy`
 ---
 
 
@@ -167,14 +158,39 @@ Importer dans Omeka les documents que vous avez catalogués en Dublin Core.
 
 ---
 class: center middle
-# 5. Editorialiser, comment, pourquoi ?
+# 5. Editorialiser, comment, pourquoi, jusqu'où ?
 ---
+##Donner du sens à sa base de données
 
-Donner du sens à sa base de données
-- expos..
+.cite[L’éditorialisation consiste à mettre des connaissances à la disposition du public.]
 
-Donner de la visibilité :
-- RS
+- Les produits éditoriaux :
+L’exposition est un bon outil de médiation, tout comme l’album d’images qui vient s’articuler autour d’une thématique
+- Accepter de ne pas être exhaustif dans les informations
+
+##Donner de la visibilité
+
+- la communication :
+S’appuyer sur les canaux officiels,
+- la diffusion
+Utilise la viralité des réseaux sociaux,
+- la médiation
+Présenter sa bibliothèque numérique, mais surtout aider dans son utilisation, accompagner les gens dans leur usage propre.
+---
+##Le plugin Exhibits
+
+####Les plus
+- Bon équilibre image texte ;
+- facile à appréhender pour le grand public ;
+- possibilité d’abonder des liens et des sources pour aller plus loin ;
+- format compatible avec les usages standards du net.
+
+####Les limites
+- Rigidité des grilles de gabarit ;
+- très peu original (mais possibilité de créer des templates personnalisés).
+
+???
+Il s’agit d’appliquer les règles d’écriture web, pour faire entrer notre propos dans les “cases” tout en veillant à un bon équilibre esthétique.
 
 ---
 template: inverse
@@ -232,7 +248,7 @@ Une exposition peut comporter plusieurs pages. Vous pouvez les faire glisser pou
 ---
 template: inverse
 class: left
-
+<br>
 - Ajouter un titre à votre page ;
 - puis un Slug (nom de la page dans la barre d'adresse URL) ;
 
@@ -261,18 +277,6 @@ Vous allez essayer de créer une mini exposition à l'aide des documents import�
 
 ---
 template: inverse
-class: center
-
-<br>
-<br>
-<br>
-<br>
-
-
-# Vous avez construit votre première exposition virtuelle avec Omeka
-
----
-template: inverse
 class: left
 # Sources
 <br>
@@ -290,10 +294,6 @@ documents numériques dans Gallica](http://www.bnf.fr/documents/Guide_oaipmh.pdf
 template: inverse
 class: left
 
-#  Omeka
-- [Site de la communauté française]
-(https://omeka.fr/presentation-omeka), s'y trouve des informations sur les deux versions d'Omeka, `Classic` et `S
-pour sémantique.
 
 ## Omeka Classic
 - [Bibliothèque numérique de l'observatoire de Paris](https://bibnum.obspm.fr/) ;
@@ -303,12 +303,15 @@ pour sémantique.
 - [Bibliothèque numérique Hortalia](http://bibliotheque-numerique.hortalia.org/)
 - [Exemple d'archive sonore](http://arxiudigital.ateneubcn.org/) ;
 - [Transcrire, plugin Scripto](http://transcrire.huma-num.fr/).
+
 ## Documentation Omeka
+- [Site de la communauté française](https://omeka.fr/presentation-omeka), s'y trouve des informations sur les deux versions d'Omeka, `Classic` et `S
+pour sémantique.
 - [Documentation officielle, en anglais](https://omeka.org/classic/docs/) ;
 - [Mode d'emploi de Exhibits par Limonade & Co](http://www.limonadeandco.fr/presentation-du-plugin-exhibitbuilder-omeka/) ;
 - [Liste des projets utilisant Omeka Classic (site Omeka)](https://omeka.org/classic/directory/).
 
-[Retour au jour 1](intro.html)
+.center[[Retour au jour 1](intro.html)]
 
 
 
