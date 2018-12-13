@@ -42,19 +42,28 @@ class: center middle
 ---
 
 ## Les droits
-- les licences libres
-- le domaine public
-- droits négociés
+- les licences libres ;
+- domaine public ;
+- droits négociés, seuls raison de limiter le téléchargement plein format.
 
 ## La qualité des documents
-- attention à la définition
+- attention à la définition et la compression des documents
 - la cohérence entre les documents
 - la granularité
 
 ## La pérennité des accès au documents
 On veillera à se doter d'une système de lien pérenne.
-- ARK (gratuit)
-- DOI
+Archival Resource Key (ARK),  Digital Object Identifiers (DOI), Extensible Resource Identifier (XRI), HANDLE, Life Science ID (LSID),     Object Identifiers (OID), Persistent Uniform Resource Locators (PURL)
+
+???
+1/ Pas le lieu d'un cours, mais question particulièrement importante.
+3/ Rien n'est plus frustrant pour le charcheur qu'un document cartographique illisible car trop peu définit ou trop pixellisé. Le crédo doit être : on peut zoomer !
+---
+class: middle center
+
+#Exercices sur les bonnes pratiques
+
+Dans le dossier `Tri`, vous allez trier les contenus dans les catégories idoines.
 
 ---
 class: center middle
@@ -64,13 +73,15 @@ class: center middle
 ---
 ##Identifier les compétences
 
-Ne peut reposer sur une seule personne.
 
-##Le mode projet
+- Identifier des personnels en mesure de se former facilement, et surtout de s'acculturer aux domaines de ses collègues.
 
-Pour les équipes restreintes
+.red[Ne doit pas reposer sur une seule personne], à minima :
+> => un "informaticien", un gestionnaire de numérisation et un responsable éditorial.
+- fonctionner en mode projet, intéressant en particulier pour les équipes restreintes et les projets de type "monographique".
+
 ## Maintenir une bibliothèque numérique
-- ais-je les moyens techniques de déployer et maintenir un Omeka avec des plugins dont il faudra veuiller à la mise à jour.
+- Question essentielle : ais-je les moyens techniques et financiers de déployer et maintenir un Omeka avec des plugins dont il faudra veuiller à la mise à jour.
 
 ---
 class: center middle
@@ -115,11 +126,15 @@ class: center middle
 
 #### Importation en masse
 
-L'import en masse passera quasiment  toujours par un fichier de métadonnées en csv et l'upload préalable sur le serveur via un FTP. Dans Omeka on peut utiliser des plugins :
+L'import en masse passera quasiment  toujours par un fichier de métadonnées en csv et l'upload préalable sur le serveur via un FTP.
+
+Dans Omeka on peut utiliser des plugins :
 - CsvImport
 - Dropbox
+
 ####Importation manuelle
 
+Il est aussi possible de cataloguer directement dans Omeka.
 - Add an Items ;
    - renseigner les métadonnées Dublin Core ;
    - indiquer le type de métadonnées complémentaire (éventuel) ;
@@ -149,11 +164,24 @@ class: left
 <br>
 ![](img/addItemTag.png)
 ---
+
+template: inverse
+class: center middle
+#Pratique d'Omeka
+###Se connecter
+Vous allez vous connecter à Omeka (voir Omeka_Connexion dans le dossier `Corpus`)
+
+En vous référant à la méthode décrite juste avant, vous allez :
+entrer dans l'onglet `collection`,
+créer une collection à votre nom,
+cette collection sera `public` et vous remplirez (en "inventant") le maximum de champs (disons jusqu'à Rights).
+
+---
 template: inverse
 class: center middle
 #Exercices d'importation de documents
 
-Importer dans Omeka les documents que vous avez catalogués en Dublin Core.
+Importer dans Omeka les documents que vous avez catalogués en Dublin Core, vous les rattacherez à votre collection.
 
 
 ---
@@ -165,27 +193,29 @@ class: center middle
 .cite[L’éditorialisation consiste à mettre des connaissances à la disposition du public.]
 
 - Les produits éditoriaux :
-L’exposition est un bon outil de médiation, tout comme l’album d’images qui vient s’articuler autour d’une thématique
-- Accepter de ne pas être exhaustif dans les informations
+
+L’exposition est un bon outil de médiation, tout comme l’album d’images qui vient s’articuler autour d’une thématique.
+
 
 ##Donner de la visibilité
 
-- la communication :
-S’appuyer sur les canaux officiels,
-- la diffusion
-Utilise la viralité des réseaux sociaux,
-- la médiation
-Présenter sa bibliothèque numérique, mais surtout aider dans son utilisation, accompagner les gens dans leur usage propre.
+- la communication : s’appuyer sur les canaux officiels ;
+- la diffusion : utilise la viralité des réseaux sociaux ;
+- la médiation : présenter sa bibliothèque numérique, mais surtout aider dans son utilisation, accompagner les gens dans leur usage propre.
+
+???
+- Accepter de ne pas être exhaustif dans les informations
+
 ---
 ##Le plugin Exhibits
 
 ####Les plus
 - Bon équilibre image texte ;
 - facile à appréhender pour le grand public ;
-- possibilité d’abonder des liens et des sources pour aller plus loin ;
-- format compatible avec les usages standards du net.
+- possibilité de multiplier les accès et renvois par des liens entre ressources ouvers d'autres sites ;
+- format compatible avec les usages standards d'internet.
 
-####Les limites
+####Les limites de l'outil
 - Rigidité des grilles de gabarit ;
 - très peu original (mais possibilité de créer des templates personnalisés).
 

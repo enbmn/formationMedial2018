@@ -19,8 +19,10 @@ class: inverse
 layout: inverse
 class: center middle
 # Mettre en ligne et valoriser le patrimoine écrit et graphique numérisé
-
+<!-- ![](img/ours.png) -->
+<br>
 ### Medial, IUT Nancy-Charlemagne les 13 et 14 décembre 2018
+
 .small[Cindy Hopfner, chargée de valorisation du patrimoine numérisé et cheffe de projet éditorial pour Limédia (BNR du Sillon Lorrain),  Bibliothèques de Nancy]
 .small[Éric Nunes, responsable du service numérique du patrimoine et chef de projet technique pour Limédia (BNR du Sillon Lorrain),  Bibliothèques de Nancy]
 
@@ -51,10 +53,10 @@ Ouvrez le navigateur et rendez-vous sur :
 
 https://github.com/enbmn/formationMedial2018
 
-Vous allez télécharger le dossier `Corpus` (lien vers les documents...), qui contient les documents utiles pour les exercices que nous alons faire durant ces deux jours, si vous disposez d'une clef USB, enregistrer les dessus (nous changeaons de salle demain).
+Vous allez télécharger le dossier `Corpus` (lien vers les documents...), qui contient les documents utiles pour les exercices que nous alons faire durant ces deux jours, si vous disposez d'une clef USB, enregistrer les dessus (nous changeons de salle demain).
 
 
-Puis éventuellement, récupérer le dossier github complet (bouton vert, download). Le dossier Remark contient les support de cours. Il suffit de lancer les deux fichiers `.html`
+Puis éventuellement, récupérer le dossier github complet (bouton vert, download). Le dossier Remark contient les supports de cours. Il suffit de lancer les deux fichiers `.html`.
 
 
 ???
@@ -131,7 +133,7 @@ Le type de fichiers se reconnaît à son extension.
 
 
 .right-column[####Diffusion
->Pour un usage courant et une visualisation confortable, on préconise des formats dits destructeurs, qui compressent l'image. On peut aussi réduire la taille en pixel de l'image. Ils sont lisibles dans les navigateurs
+>Pour un usage courant et une visualisation confortable, on préconise des formats dits destructeurs, qui compressent l'image. On peut aussi réduire la taille en pixel de l'image. Ils sont lisible dans les navigateurs
 <br>
 <br>
 <br>
@@ -142,16 +144,10 @@ Le type de fichiers se reconnaît à son extension.
 
 
 ???
-La compression JPEG supprime des pixels au valeur très proche, plus elle est élevée, plus l'image pixelise (moins de pixel = moins de détail)
+La compression JPEG supprime des pixels aux valeurs très proche, plus elle est élevée, plus l'image pixélise (moins de pixel = moins de détail)
 
 Donner des exemples
 - Facteur 4 si on double la définition : 300 dpi = 1mo > 600 dpi = 4mo
----
-class: middle center
-
-#Exercices sur les formats d'images
-
-Dans le dossier `Tri`, vous allez trier les contenus dans les catégories idoines.
 
 
 ---
@@ -253,7 +249,7 @@ Il existe autant de types de métadonnées que de besoins, dans nos métiers cit
 ####Visualiser ces données, les exploiter :
 >- Démonstration de [`Exiftool`](https://www.sno.phy.queensu.ca/~phil/exiftool/) sur différents fichiers, utiliser `IrfanView` pour écrire des métadonnées
 
->- Exemple [Flickr](http://www.flickr.com/photos/bmnstanislas/), upload d'un fichier
+>- Exemple Flickr, upload d'un fichier
 ---
 ##Métadonnées externes :
 
@@ -275,7 +271,7 @@ Il existe autant de types de métadonnées que de besoins, dans nos métiers cit
 
 >Schéma : un schéma est un ensemble de champs prédéfinis (les balises XML par exemple)
 >- IPTC : "La norme de métadonnées de photo IPTC est la norme la plus largement utilisée en raison de son acceptation universelle par les photographes, les distributeurs,
-les agences de presse, les archivistes et les développeurs. Il est embarqué, contrairement à XMP (Extensible Metadata Platform)  qui est un format de métadonnées basé sur XML, pas formcément embarqué, et extensible.
+les agences de presse, les archivistes et les développeurs. Il est embarqué, contrairement à XMP (Extensible Metadata Platform)  qui est un format de métadonnées basé sur XML, pas forcément embarqué, et extensible.
 >Le schéma définit la structure, les propriétés et les champs des métadonnées, afin que les images soient décrites de manière optimale et facilement accessibles ultérieurement."
 >- EXIF EXangeable Information File Format : elles sont générées à la création du fichier et n'ont pas vocation à être modifiées, elle constitue la description technique de plus bas niveau du document.
 >- PREMIS : "Le dictionnaire de données
@@ -299,15 +295,13 @@ class: left
 On peut néanmoins toutes les regrouper en 3 catégories, qui se combinent :
 
 - .cite[Descriptives], elles concernent le contenu du document ;
-
 - .cite[Techniques et structurelles], elles décrivent les caractéristiques techniques du document, sa structure, les prérequis à sa diffusion (format, etc.) ;
-
 - .cite[Administratives], elles concernent le fournisseur, créateur du document, son cycle de vie.
 
 
 
 ???
->Exif concerne essentiellement les données techniques, mais peut embarquer des données de géolocalisation, qui viennent cette fois documenter l'objet représenté. > Utilisé par [Flickr](http://www.flickr.com/photos/bmnstanislas/).
+>Exif concerne essentiellement les données techniques, mais peut embarquer des données de géolocalisation, qui viennent cette fois documenter l'objet représenté. > Utilisé par Flickr.
 ---
 layout: inverse
 class: middle center
@@ -328,7 +322,7 @@ class: center middle
 <br>
 Ce schéma est un ensemble de métadonnées créé en 1995 par l'OCLC à Dublin aux USA. Il permet de décrire n'importe quel type de document mis en ligne.
 Il avait pour objet d'aider à l'indexation du web,
-mais les moteurs ne s'en sont pas emparés, préférant développer leurs propres algorythmes (pour des raisons commerciales).
+mais les moteurs ne s'en sont pas emparés.
 Il est normalisé depuis 2003 (ISO 15836) et est aujourd'hui en version 1.1.
 <br><br>
 .cite[L'objectif du Dublin Core est de fournir un socle commun d'éléments descriptifs pour améliorer le signalement et la recherche de ressources
@@ -376,14 +370,12 @@ layout: inverse
 class: center middle
 #  6. La valorisation
 ---
-###Pourquoi une bibliothèque numérique ?
-####Le contexte :
 Quel est le projet : commande d'élu, projet scientifique, évènementiel, etc. ?
 
 Se poser les bonnes questions :
-  > - corpus (tout numériser  et tout mettre en ligne, numériser une sélection pour mise en ligne, etc.)
-  > - public (déterminera le niveau de spécialisation des métadonnées)
-  > - moyens (humains et financier, leur pérennisation, etc.)
+  > - corpus
+  > - public
+  > - moyens
 
 Pour proposer une entrée dans la bibliothèque numérique :
 - .cite[scientifique], importance du moteur, des sources... ;
@@ -419,12 +411,7 @@ Avec ses points forts :
   - personnalisable et hackable
 - personnalisable grâce à des thèmes (templates) ;
 - simple à prendre en main ;
-- fait une large place à la valorisation ;
-- interopérabilité garantie par les format de métadonnées et les plugins OAI-PMH ;
-- multiples exports natifs (RDF, Atom, Json, Xml) ;
-- compatible Zotero ;
-- supporte nativement beaucoup de formats de fichiers son, vidéo, texte, etc)
-- partage des ressources facilité (partage sur les réseaux, format de citation, etc.)
+- fait une large place à la valorisation.
 
 
 
@@ -485,11 +472,11 @@ class: two-columns
 ## Back office
 <br>
 <br>
-Les fonctionnalités d'administration se gèrent depuis le back office (rôle super administrateur) par les onglets `Plugins`, `Appearence`, `Users`, et `settings`. On y gère :
-.cite[- Réglage des paramètres de sécurité, du moteur ;
+Les fonctionnalités d'administration section se gèrent depuis le back office (rôle super administrateur) par les onglets `Plugins`, `Appearence`, `Users`, et `settings`. Ils donnent accès à :
+.cite[- Réglage des paramètres ;
 - Gestion des utilisateurs et des droits ;
 - Configuration du thème et des plugins ;
-- Gestion des contenus, des formats de métadonnées ;
+- Gestion des contenus ;
 - Import de lots de données]
 ]
 
@@ -528,10 +515,9 @@ Si sa mise en œuvre est relativement aisée néanmoins il faut disposer :
 De notre point de vue il en existe assez peu. Et il faut noter que cet outil n'a pas d'équivalent sur le marché.
 
 - Il existe une limite hypothétique à 100 000 items, mais pas de retour sur ce point.
-- gère difficillement l'implémentation d'URL pérennes ;
+
 - Comme tous les logiciels libres, on repose sur une communauté, mais dans le cas d'Omeka, celle-ci se développe depuis bientôt 10 ans, par ailleurs une association française s'est créee (voir Sources). De plus, les technologies mises en oeuvre sont bien connues, libres et documentées.
-- ne permet pas l'export en lots ;
-- ne propose pas d'affiner les résultat nativement par des facettes ;
+
 - Reste, mais c'est commun à d'autres outils, les problèmes de maintenance du code en cas de développement personnalisés. Votre plugin devra toujours pouvoir être compatible avec le Core d'Omeka (son "moteur"). Ce point peut être lourd de conséquence si le code n'est pas assez souple et dans le cas d'une mise à jour majeur.
 
 <br>
