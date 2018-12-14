@@ -150,6 +150,35 @@ La compression JPEG supprime des pixels au valeur très proche, plus elle est é
 Donner des exemples
 - Facteur 4 si on double la définition : 300 dpi = 1mo > 600 dpi = 4mo
 ---
+
+###Rappel sur l'image numérique
+8 bits  > 1 octet / 1024 octet = 1Ko / 1024Ko = 1Mo
+
+Une image est dite matricielle = bitmap (carte de bits, le bit étant la plus petit unité informatique)
+
+1 pixel = 1 bit encodé par 1 ou 0
+
+####Profondeur d'acquisition :
+
+|type  | codage | usage
+--|---|---|--
+| n&b | 1bit | imprimé courant, document très cotrastés en n&b |
+| niveaux de gris | 8 bits (soit 256 couleurs)| gravures |
+| couleur | 24bits | tous documents en couleurs |
+
+#### Définition
+C'est le nombre total de pixel que contient l'image.
+- 2018 px X 3072 px = 6,29 Mp
+
+#### Résolution
+Nombre de pixel par pouce
+- scan a 300 dpi (points par pouce)  contient 300 px
+
+Un écran affiche entre 72 et 96 pixels, une impression à l'échelle 1 de qualité, environ 300 pixels.
+
+Une image doit avoir surtout une bonne définition, la résolution est utile pour le rendu que l'on veut en faire.
+
+---
 class: middle center
 
 #Exercices sur les formats d'images
