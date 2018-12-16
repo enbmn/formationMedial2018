@@ -1,0 +1,158 @@
+---- File ----
+FileName                        : IPTC-PhotometadataRef01.xmp
+---- XMP ----
+XMPToolkit                      : Image::ExifTool 9.74
+CountryCode                     : AUT
+CreatorCity                     : Creator's CI: City
+CreatorCountry                  : Creator's CI: Country
+CreatorAddress                  : Creator's CI: Address, line 1
+CreatorPostalCode               : CREATOR'S CI: POSTCODE
+CreatorRegion                   : Creator's CI: State/Province
+CreatorWorkEmail                : Creator's CI: Email@1, Email@2
+CreatorWorkTelephone            : Creator's CI: Phone # 1, Phone # 2
+CreatorWorkURL                  : http://www.Creators.CI/WebAddress
+IntellectualGenre               : Intellectual Genre
+Location                        : Sublocation (legacy)
+Scene                           : IPTC Scene Code
+SubjectCode                     : IPTC-Subject-Code1, IPTC-Subject-Code2, IPTC-Subject-Code3
+AdditionalModelInformation      : Additional Model Infos
+ArtworkCopyrightNotice          : AO Copyright Notice 1, AO Copyright Notice 2, AO Copyright Notice 3, AO Copyright Notice 4, AO Copyright Notice 5
+ArtworkCreator                  : AO Creator 1, AO Creator 2, AO Creator 3, AO Creator 4, AO Creator 5
+ArtworkDateCreated              : 2011:11:01, 2011:11:02, 2011:11:03, 2011:11:04, 2011:11:05
+ArtworkSource                   : AO Source 1, AO Source 2, AO Source 3, AO Source 4, AO Source 5
+ArtworkSourceInventoryNo        : AO Source Inventory 1, AO Source Inventory 2, AO Source Inventory 3, AO Source Inventory 4, AO Source Inventory 5
+ArtworkTitle                    : AO Title 1, AO Title 2, AO Title 3, AO Title 4, AO Title 5
+DigitalSourceType               : http://cv.iptc.org/newscodes/digitalsourcetype/softwareImage
+Event                           : The Event
+LocationCreatedCity             : City (Location created)
+LocationCreatedCountryCode      : GB
+LocationCreatedCountryName      : Country Name (Location created)
+LocationCreatedProvinceState    : State/Province (Location created)
+LocationCreatedSublocation      : Sublocation (Location created)
+LocationCreatedWorldRegion      : World Region (Location created)
+LocationShownCity               : City 1 (Location shown), City 2 (Location shown), City 3 (Location shown), City 4 (Location shown)
+LocationShownCountryCode        : AND, AU, BW, CN
+LocationShownCountryName        : Andorra, Australia, Botswana, China
+LocationShownProvinceState      : State/Province 1 (Location shown), State/Province 2 (Location shown), State/Province 3 (Location shown), State/Province 4 (Location shown)
+LocationShownSublocation        : Sublocation 1 (Location shown), Sublocation 2 (Location shown), Sublocation 3 (Location shown), Sublocation 4 (Location shown)
+LocationShownWorldRegion        : World Region 1 (Location shown), World Region 2 (Location shown), World Region 3 (Location shown), World Region 4 (Location shown)
+MaxAvailHeight                  : 500
+MaxAvailWidth                   : 1000
+ModelAge                        : 1, 2, 3
+OrganisationInImageCode         : Organisation Code 1, Organisation Code 2, Organisation Code 3
+OrganisationInImageName         : Organisation Name 1, Organisation Name 2, Organisation Name 3
+PersonInImage                   : Person Shown 1, Person Shown 2, Person Shown 3, Person Shown 4, Person Shown 5
+RegistryItemID                  : Registry Image ID 1, Registry Image ID 2, Registry Image ID 3, Registry Image ID 4
+RegistryOrganisationID          : Registry Organisation ID 1, Registry Organisation ID 2, Registry Organisation ID 3, Registry Organisation ID 4
+Creator                         : Creator
+Description                     : The description aka caption
+Format                          : image/jpeg
+Rights                          : © 2011, Copyright Notice
+Subject                         : Keyword1, Keyword2, Keyword3, Keyword4, IPTC-PhotometadataRef01wmd_2mdc
+Title                           : The title
+AuthorsPosition                 : Creator's Job Title
+CaptionWriter                   : Description Writer
+City                            : City (legacy)
+Country                         : Country (legacy)
+Credit                          : Credit Line
+DateCreated                     : 2011:10:28 12:00:00+00:00
+Headline                        : The headline
+History                         : HASH(0x2d028bc), HASH(0x2d0cb88), HASH(0x2d0ce94), HASH(0x2d0cd44), HASH(0x2d0cbac), HASH(0x2d0ce1c), HASH(0x2d0ce34), HASH(0x2d0cb28)
+Instructions                    : Instructions
+Source                          : Source
+State                           : State/Province (legacy)
+TransmissionReference           : Job ID
+AdultContentWarning             : Not Required
+CopyrightOwnerID                : Copyright Owner ID 1, Copyright Owner ID 2, Copyright Owner ID 3
+CopyrightOwnerName              : Copyright Owner Name 1, Copyright Owner Name 2, Copyright Owner Name 3
+CopyrightOwnerImageID           : Copyright Owner Image ID
+CopyrightRegistrationNumber     : Copyright Registration Number
+CopyrightStatus                 : Protected
+CreditLineRequired              : Credit Adjacent To Image
+Custom1                         : PLUS Custom 1
+Custom10                        : PLUS Custom 10
+Custom2                         : PLUS Custom 2
+Custom3                         : PLUS Custom 3
+Custom4                         : PLUS Custom 4
+Custom5                         : PLUS Custom 5
+Custom6                         : PLUS Custom 6
+Custom7                         : PLUS Custom 7
+Custom8                         : PLUS Custom 8
+Custom9                         : PLUS Custom 9
+EndUserID                       : End User ID 1, End User ID 2, End User ID 3
+EndUserName                     : End User Name 1, End User Name 2, End User Name 3
+FileNameAsDelivered             : Image File Name as Delivered
+FirstPublicationDate            : 2011:10:28
+ImageAlterationConstraints      : No Cropping, No Flipping, No Retouching, No Colorization, No De-Colorization, No Merging
+ImageCreatorID                  : Image Creator ID 1, Image Creator ID 2, Image Creator ID 3
+ImageCreatorName                : Image Creator Name 1, Image Creator Name 2, Image Creator Name 3
+ImageCreatorImageID             : Image Creator Image ID
+ImageDuplicationConstraints     : No Duplication Constraints
+ImageFileConstraints            : Maintain File Name, Maintain ID in File Name, Maintain Metadata, Maintain File Type
+ImageFileFormatAsDelivered      : JPEG Interchange Formats (JPG, JIF, JFIF)
+ImageFileSizeAsDelivered        : Up to 1 MB
+ImageSupplierID                 : Image Supplier ID
+ImageSupplierName               : Image Supplier Name
+ImageSupplierImageID            : Image Supplier Image ID
+ImageType                       : Multimedia or Composited Image
+LicenseEndDate                  : 2011:01:02
+LicenseID                       : License ID
+LicenseStartDate                : 2011:01:01
+LicenseTransactionDate          : 2011:12:01
+LicenseeID                      : Licensee ID 1, Licensee ID 2, Licensee ID 3
+LicenseeName                    : Licensee Name 1, Licensee Name 2, Licensee Name 3
+LicenseeImageID                 : Licensee Image ID
+LicenseeImageNotes              : Licensee Image Notes
+LicenseeProjectReference        : Licensee Project Reference 1, Licensee Project Reference 2, Licensee Project Reference 3, Licensee Project Reference 4
+LicenseeTransactionID           : Licensee Transaction ID 1, Licensee Transaction ID 2, Licensee Transaction ID 3, Licensee Transaction ID 4
+LicensorCity                    : Licensor City 1, Licensor City 2, Licensor City 3
+LicensorCountry                 : Licensor Country 1, Licensor Country 2, Licensor Country 3
+LicensorEmail                   : Licensor Email 1, Licensor Email 2, Licensor Email 3
+LicensorExtendedAddress         : Licensor Ext Addr 1, Licensor Ext Addr 2, Licensor Ext Addr 3
+LicensorID                      : Licensor ID 1, Licensor ID 2, Licensor ID 3
+LicensorName                    : Licensor Name 1, Licensor Name 2, Licensor Name 3
+LicensorPostalCode              : LICENSOR POSTCODE 1, LICENSOR POSTCODE 2, LICENSOR POSTCODE 3
+LicensorRegion                  : Licensor Region 1, Licensor Region 2, Licensor Region 3
+LicensorStreetAddress           : Licensor Street Addr 1, Licensor Street Addr 2, Licensor Street Addr 3
+LicensorTelephone1              : Licensor Phone1 1, Licensor Phone1 2, Licensor Phone1 3
+LicensorTelephone2              : Licensor Phone2 1, Licensor Phone2 2, Licensor Phone2 3
+LicensorURL                     : Licensor Web 1, Licensor Web 2, Licensor Web 3
+LicensorImageID                 : Licensor Image ID
+LicensorNotes                   : Licensor Notes
+LicensorTransactionID           : Licensor Transaction ID 1, Licensor Transaction ID 2, Licensor Transaction ID 3, Licensor Transaction ID 4
+MediaConstraints                : Media Contraints
+MediaSummaryCode                : MEDIASUMMARYCODE
+MinorModelAgeDisclosure         : Age 25 or Over
+ModelReleaseID                  : Model Release ID 1, Model Release ID 2, Model Release ID 3, Model Release ID 4
+ModelReleaseStatus              : Not Applicable
+OtherConditions                 : Other License Conditions
+OtherConstraints                : Other License Constraints
+OtherImageInfo                  : Other Image Info
+OtherLicenseDocuments           : Other License Documents 1, Other License Documents 2, Other License Documents 3, Other License Documents 4
+OtherLicenseInfo                : Other License Info
+OtherLicenseRequirements        : Other License Requirements
+ProductOrServiceConstraints     : Product or Service Constraints
+PropertyReleaseID               : Property Release ID 1, Property Release ID 2, Property Release ID 3, Property Release ID 4
+PropertyReleaseStatus           : Not Applicable
+RegionConstraints               : Region Constraints
+Reuse                           : Repeat Use
+TermsAndConditionsText          : Terms and Conditions Text
+TermsAndConditionsURL           : http://terms.and.conditions.url
+PLUSVersion                     : 1.2.0
+CreateDate                      : 2011:10:28 18:18:25+02:00
+CreatorTool                     : Adobe Photoshop CS5.1 Windows
+MetadataDate                    : 2013:03:01 14:06:02+01:00
+ModifyDate                      : 2011:10:28 18:26:21+02:00
+DerivedFromDocumentID           : xmp.did:96FD61768001E111986DC83CF8A62284
+DerivedFromInstanceID           : xmp.iid:98FD61768001E111986DC83CF8A62284
+DerivedFromOriginalDocumentID   : xmp.did:96FD61768001E111986DC83CF8A62284
+DocumentID                      : xmp.did:96FD61768001E111986DC83CF8A62284
+HistoryAction                   : created, saved, saved, converted, derived, saved, saved, saved
+HistoryInstanceID               : xmp.iid:96FD61768001E111986DC83CF8A62284, xmp.iid:97FD61768001E111986DC83CF8A62284, xmp.iid:98FD61768001E111986DC83CF8A62284, xmp.iid:99FD61768001E111986DC83CF8A62284, xmp.iid:093405078301E111979EC86BFB83319F, xmp.iid:6260a1f0-e90d-c444-84c8-53b43eb2869c
+HistorySoftwareAgent            : Adobe Photoshop CS5.1 Windows, Adobe Photoshop CS5.1 Windows, Adobe Photoshop CS5.1 Windows, Adobe Photoshop CS5.1 Windows, Adobe Photoshop Camera Raw 6.5 (Windows), Adobe Photoshop Camera Raw 7.3 (Windows)
+HistoryWhen                     : 2011:10:28 18:18:25+02:00, 2011:10:28 18:25:53+02:00, 2011:10:28 18:26:21+02:00, 2011:10:28 18:26:21+02:00, 2011:10:28 19:04:15+02:00, 2013:03:01 14:06:02+01:00
+HistoryChanged                  : /, /, /, /metadata, /metadata
+HistoryParameters               : from application/vnd.adobe.photoshop to image/jpeg, converted from application/vnd.adobe.photoshop to image/jpeg
+InstanceID                      : xmp.iid:6260a1f0-e90d-c444-84c8-53b43eb2869c
+OriginalDocumentID              : xmp.did:96FD61768001E111986DC83CF8A62284
+UsageTerms                      : Rights Usage Termns

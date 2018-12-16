@@ -48,17 +48,22 @@ class: center middle
 
 #### La qualité des documents
 - attention à la définition et la compression des documents
-- la cohérence entre les documents
-- la granularité
+- la cohérence entre les documents (par exemple est-ce pertinent de mélanger sur la même plateforme manuscrits et presse ancienne, touche des publics et besoins différents)
+- la granularité (tomes ensembles ou non, liens entre eux, journaux au fascicule, au volume, etc.)
 
 #### La pérennité des accès aux documents
 On veillera à se doter d'une système de lien pérenne.
-Archival Resource Key (ARK),  Digital Object Identifiers (DOI), Extensible Resource Identifier (XRI), HANDLE, Life Science ID (LSID), Object Identifiers (OID), Persistent Uniform Resource Locators (PURL). Il existe des plugins, au moins pour Omeka S en Ark et DOI.
+Archival Resource Key ([ARK](http://n2t.net/e/ark_ids.html)),  Digital Object Identifiers (DOI), Extensible Resource Identifier (XRI), HANDLE, Life Science ID (LSID), Object Identifiers (OID), Persistent Uniform Resource Locators (PURL). Il existe des plugins, au moins pour Omeka S en Ark et DOI.
 
+Ark pour Omeka :
+- [ici](https://github.com/Daniel-KM/Omeka-plugin-ArkAndNoid)
+- [et là](https://github.com/biblibre/omeka-s-module-Ark)
 ???
 1/ Pas le lieu d'un cours, mais question particulièrement importante.
-3/ Rien n'est plus frustrant pour le chercheur qu'un document illisible. Le crédo doit être : on peut zoomer !
 
+2/ Rien n'est plus frustrant pour le chercheur qu'un document illisible.
+
+3/ Ark est utilisé à la BnF ([voir un tuto ici](https://github.com/publicarchitectura/elementum/blob/master/nGallica.md)), il est gratuit, sa mise en œuvré se fait au travers de plusieurs outils disponible sur Github (demander ça à votre DSIT ou développeur)
 ---
 class: center middle
 
@@ -88,6 +93,8 @@ Mais l'intérêt de ce format étant, pour nous, l'intéropérabilité, on a bes
 
 Ainsi la BnF propose un [guide d'usage](http://www.bnf.fr/fr/professionnels/formats_catalogage/a.f_dublin_core.html) , et "impose" [quelques règles](http://www.bnf.fr/documents/Guide_oaipmh.pdf) pour pouvoir être éligible au moissonnage.
 
+Vous trouverez dans le doccier `ressources` l'adaptation que l'on utilise à Nancy.
+
 >Conventions BnF
 .cite[>>Dans ce guide chaque élément possède l’un des quatre statuts suivants :
 >>- obligatoire : l’élément doit impérativement figurer dans la notice
@@ -107,12 +114,7 @@ Ainsi la BnF propose un [guide d'usage](http://www.bnf.fr/fr/professionnels/form
 >Son utilisation est libre, tout comme ses spécifications, disponibles sur le site www.openarchives.org.
 
 ---
-template: inverse
-class: center middle
-#Exercice de description de documents en Dublin Core
 
-Dans le dossier `corpus` que vous allez télécharger à nouveau, choisissez quelques images du dossier `aCataloguer` et faites en la notice Dublin Core dans le tableur `Grille_DC`, aidez-vous du `Manuel_DC_Nancy`
----
 
 
 class: center middle
@@ -158,26 +160,6 @@ class: left
 <br>
 <br>
 ![](img/addItemTag.png)
----
-
-template: inverse
-class: center middle
-#Pratique d'Omeka
-###Se connecter
-Vous allez vous connecter à Omeka (voir Omeka_Connexion dans le dossier `Corpus`)
-
-En vous référant à la méthode décrite juste avant, vous allez :
-entrer dans l'onglet `collection`,
-créer une collection à votre nom,
-cette collection sera `public` et vous remplirez (en "inventant") le maximum de champs (disons jusqu'à Rights).
-
----
-template: inverse
-class: center middle
-#Exercices d'importation de documents
-
-Importer dans Omeka les documents que vous avez catalogués en Dublin Core, vous les rattacherez à votre collection.
-
 
 ---
 class: center middle
@@ -293,10 +275,12 @@ class: left
 - Cliquez sur le bouton vert "Apply"
 ---
 template: inverse
-class: center middle
-#Création d'une exposition
+class: left
+#À vous de jouer...
 
-Vous allez essayer de créer une mini exposition à l'aide des documents importés tout à l'heure.
+Vous avez pu pratiquer l'essentiel d'Omeka, de quoi vous faire une idée assez précise sur l'intérêt (ou non) de cet outil pour votre projet.
+
+Si vous souhaitez continuer à tester les fonctions de base, n'hésitez pas à vous créer un compte, sinon connectez vous avec les logs que je vous ai fait parvenir sur le plateforme de démo que j'ai mis en place [ici](https://demoform.omeka.net/admin).
 
 
 
@@ -315,9 +299,10 @@ class: left
 - [Guide d'interopérabilité OAI-PMH
 pour un référencement des
 documents numériques dans Gallica](http://www.bnf.fr/documents/Guide_oaipmh.pdf)
+- [un billet de mon carnet de note sur OAI-PMH](https://enbmn.github.io/meta/carnet/oaipmh)
 - [Guide des bonnes pratiques numériques Huma-Num](https://www.huma-num.fr/sites/default/files/guide_des_bonnes_pratiques.pdf)
 - [Sur les formats (en particulier audio et vidéo) et la conservation des données (source Adonis / Huma-Num)](https://www.huma-num.fr/sites/default/files/guide-formats-numeriques.pdf)
-
+- [Liste des métadonnées utilisables dans Exiftool](https://sno.phy.queensu.ca/~phil/exiftool/TagNames/)
 ---
 template: inverse
 class: left
